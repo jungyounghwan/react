@@ -2,12 +2,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: [
-        './src/index.js'
+        'babel-polyfill', './src/index.js'
     ],
     plugins: [
         new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
             filename: "./public/css/App.css"
         })
     ],
@@ -24,13 +22,15 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            // you can specify a publicPath here
-                            // by default it use publicPath in webpackOptions.output
-                            publicPath: '/**/*.css',
                             sourceMap: true
                         }
                     },
-                    "css-loader"
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            minimize: true
+                        }
+                   }
                 ]
             }
         ]
