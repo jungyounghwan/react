@@ -1,6 +1,15 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
     entry: [
         './src/index.js'
+    ],
+    plugins: [
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: "./public/css/App.css"
+        })
     ],
     module: {
         rules: [
@@ -12,27 +21,27 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    require.resolve('style-loader'),
                     {
-                        loader: require.resolve('css-loader'),
+                        loader: MiniCssExtractPlugin.loader,
                         options: {
-                            importLoaders: 1,
-                            modules: true,
-                            localIdentName: '[local]'
-                            /*localIdentName: '[path][name]__[local]--[hash:base64:5]'*/
-                        },
+                            // you can specify a publicPath here
+                            // by default it use publicPath in webpackOptions.output
+                            publicPath: '/**/*.css',
+                            sourceMap: true
+                        }
                     },
+                    "css-loader"
                 ]
             }
         ]
     },
+    devtool: 'source-map',
     resolve: {
         extensions: ['*', '.js', '.jsx']
     },
     output: {
-        path: __dirname + '/dist',
         publicPath: '/',
-        filename: 'bundle.js'
+        filename: './public/js/bundle.js'
     },
     devServer: {
         port: 7777,

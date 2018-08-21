@@ -1,8 +1,9 @@
 import React from 'react';
+import './hr.css';
 
 const CompanyInfo = () => {
     return (
-        <div>
+        <div id="hr">
             <h1>CompanyInfo</h1>
         </div>
     )

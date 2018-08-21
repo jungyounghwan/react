@@ -1,0 +1,13 @@
+/* default definition */
+* { margin:0; padding:0;}
+body { font-size:75%; line-height: 165%; font-family:  dotum, gulim, sans-serif; color: #666; background-color:#fff;letter-spacing:-1px;}
+legend, hr { position:absolute; overflow:hidden;  height:0; width:0; font-size:0; visibility:hidden; }
+form, fieldset { border:0; }
+li { list-style:none;}
+li img {vertical-align: middle;}	/* for IE imge margin */
+A:link, A:visited {	color: #555; text-decoration: none; }
+A:active { color: #555; text-decoration: underline; }
+A:hover { color: #3557af; text-decoration: none; }
+textarea { border-top: 1px solid #797979; border-right: 1px solid #d4d1c8; border-bottom: 1px solid #d4d1c8; border-left: 1px solid #797979; background: #fff; }
+img { border:0; }
+input, select, textarea {font-size:100%; vertical-align:middle; padding:3px 3px 2px 3px;}

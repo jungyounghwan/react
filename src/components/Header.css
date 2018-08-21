@@ -1,33 +1,6 @@
-/* default definition */
-* { margin:0; padding:0;}
-body { font-size:75%; line-height: 165%; font-family:  dotum, gulim, sans-serif; color: #666; background-color:#fff;letter-spacing:-1px;}
-legend, hr { position:absolute; overflow:hidden;  height:0; width:0; font-size:0; visibility:hidden; }
-form, fieldset { border:0; }
-li { list-style:none;}
-li img {vertical-align: middle;}	/* for IE imge margin */
-A:link, A:visited {	color: #555; text-decoration: none; }
-A:active { color: #555; text-decoration: underline; }
-A:hover { color: #3557af; text-decoration: none; }
-textarea { border-top: 1px solid #797979; border-right: 1px solid #d4d1c8; border-bottom: 1px solid #d4d1c8; border-left: 1px solid #797979; background: #fff; }
-img { border:0; }
-input, select, textarea {font-size:100%; vertical-align:middle; padding:3px 3px 2px 3px;}
-.blind {position:absolute;width:1px;height:1px;clip:rect(1px,1px,1px,1px)}
-
 #header {position:relative;width:970px;height:90px;margin:0 auto}
 #header .ci {width:165px;}
 #header .nav {position:absolute;left:165px;top:55px;width:620px;}
 #header .nav li {float:left;font-size:18px;margin-left:65px;font-weight:bold}
-
 #header .util_option {position:absolute;right:0;top:55px;width:130px;}
 #header .util_option li {float:left;margin-left:10px;text-align:right}
-
-#container {position:relative;background-color:aqua}
-
-
-
-
-
-
-
-
-.big_text {text-align:center;}
