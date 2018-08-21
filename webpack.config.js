@@ -1,3 +1,4 @@
+const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -6,7 +7,7 @@ module.exports = {
     ],
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "./public/css/App.css"
+            filename: "./css/App.css"
         })
     ],
     module: {
@@ -40,8 +41,9 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
     },
     output: {
+        path : path.resolve(__dirname, 'public'),
         publicPath: '/',
-        filename: './public/js/bundle.js'
+        filename: './js/App.js'
     },
     devServer: {
         port: 7777,
