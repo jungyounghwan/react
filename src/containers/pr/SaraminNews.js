@@ -1,9 +1,8 @@
 import React from 'react';
-import './pr.css';
 
 const SaraminNews = () => {
     return (
-        <div id="pr">
+        <div id="container">
             <h1>SaraminNews</h1>
         </div>
     )

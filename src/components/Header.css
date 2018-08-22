@@ -1,6 +1,0 @@
-#header {position:relative;width:970px;height:90px;margin:0 auto}
-#header .ci {width:165px;}
-#header .nav {position:absolute;left:165px;top:55px;width:620px;}
-#header .nav li {float:left;font-size:18px;margin-left:65px;font-weight:bold}
-#header .util_option {position:absolute;right:0;top:55px;width:130px;}
-#header .util_option li {float:left;margin-left:10px;text-align:right}
