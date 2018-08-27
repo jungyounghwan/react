@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const AutoPreFixer = require('autoprefixer');
 //const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -27,7 +28,20 @@ module.exports = {
                 test: /\.(s*)css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader']
+                    use: [
+                        {
+                            loader: 'css-loader'
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                plugins: [AutoPreFixer]
+                            },
+                        },
+                        {
+                            loader: 'sass-loader'
+                        }
+                    ]
                 })
             }
         ]
