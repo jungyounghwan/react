@@ -1,13 +1,19 @@
 const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+//const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: [
         'babel-polyfill', './src/index.js'
     ],
+    output: {
+        path : path.resolve(__dirname, 'public'),
+        publicPath: '/',
+        filename: './js/App.js'
+    },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: "./css/App.css"
+        new ExtractTextPlugin({
+            filename: './css/App.css'
         })
     ],
     module: {
@@ -18,32 +24,17 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test: /\.css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            minimize: true
-                        }
-                   }
-                ]
+                test: /\.(s*)css$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'sass-loader']
+                })
             }
         ]
     },
     devtool: 'source-map',
     resolve: {
         extensions: ['*', '.js', '.jsx']
-    },
-    output: {
-        path : path.resolve(__dirname, 'public'),
-        publicPath: '/',
-        filename: './js/App.js'
     },
     devServer: {
         port: 7777,

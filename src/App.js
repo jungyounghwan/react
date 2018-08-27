@@ -11,10 +11,7 @@ import Pr from './containers/pr/SaraminNews';
 import Recruit from './containers/recruit/Talent';
 import Sitemap from './containers/etc/Sitemap';
 
-import './resources/css/reset.css';
-import './resources/css/common.css';
-import './resources/css/content.css';
-
+import './resources/sass/app.scss';
 
 class App extends React.Component {
     render(){
