@@ -26,7 +26,7 @@ class App extends React.Component {
                     <Route path='/ir' component={Ir} />
                     <Route path='/pr' component={Pr} />
                     <Route path='/recruit' component={Recruit} />
-                    <Route path='/sitemap' component={Sitemap} />
+                    <Route path='/etc' component={Sitemap} />
 
                     <Footer />
                 </div>

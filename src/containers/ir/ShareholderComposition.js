@@ -3,7 +3,7 @@ import React from 'react';
 const ShareholderComposition = () => {
     return (
         <div id="container">
-            <h1>ShareholderComposition</h1>
+            <h2>ShareholderComposition</h2>
         </div>
     )
 }

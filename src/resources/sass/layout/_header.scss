@@ -1,14 +1,8 @@
-#header {position:relative;width:970px;height:90px;margin:0 auto}
-#header .ci {width:165px;}
+#header {position:relative;width:970px;height:90px;margin:0 auto;z-index:100;}
+#header .ci {position:absolute;left:0;top:45px;}
 #header .nav {position:absolute;left:165px;top:55px;width:620px;}
 #header .nav li {float:left;font-size:18px;margin-left:65px;font-weight:bold}
-#header .util_option {position:absolute;right:0;top:55px;width:130px;}
-#header .util_option li {float:left;margin-left:10px;text-align:right}
-
-.example {
-  display: grid;
-  transition: all .5s;
-  user-select: none;
-  border-radius: 5%;
-  background: linear-gradient(to bottom, white, black);
-}
+#header .nav li .box_depth2 {display:none;position:absolute;left:0;top:19px;padding:10px;}
+#header .util_option {position:absolute;right:0;top:60px;width:140px;}
+#header .util_option li {float:left;margin-left:10px;text-align:right;font-size:11px;color:#848484}
+#header .util_option li a.bg_round {padding:2px 12px;background-color:#3557af;border-radius:8px;color:#fff;}

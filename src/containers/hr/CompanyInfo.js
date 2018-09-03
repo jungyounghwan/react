@@ -3,7 +3,7 @@ import React from 'react';
 const CompanyInfo = () => {
     return (
         <div id="container">
-            <h1>CompanyInfo</h1>
+            <h2>CompanyInfo</h2>
         </div>
     )
 }
