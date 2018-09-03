@@ -1,3 +1,7 @@
 .main {}
-.main .box_slide {position:relative;width:100%;}
-.main .box_slide li {position:absolute;left:0;top:0;width:100%;}
+.main .box_slide {position:relative;height:350px;overflow:hidden;}
+.main .box_slide > li {display:none;position:absolute;left:0;top:0;width:100%;}
+.main .box_slide > li img {width:100%}
+.main .dot_slide {overflow:hidden;}
+.main .dot_slide button {float:left;width:14px;height:14px;border-radius:50%;}
+.main .dot_slide button.on {background:#000;}
