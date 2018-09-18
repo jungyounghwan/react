@@ -18,7 +18,7 @@ class Main extends React.Component {
             this.state.count = n;
         }
         var target = document.getElementsByClassName("slide");  //slide1에 대한 dom 참조
-        var dots = document.getElementsByClassName("demo");
+        var dots = document.getElementsByClassName("dot_nav");
         for(var i = 0; i < target.length; i++) {
             target[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
         }
@@ -36,7 +36,7 @@ class Main extends React.Component {
     componentDidMount() {
         this.interval = setInterval(() => {
             this.slideShow();
-        }, 3000);
+        }, 4000);
     }
 
     componentWillUnmount() {
@@ -47,15 +47,18 @@ class Main extends React.Component {
         return (
         <div id="container" className="main">
             <div className="box_slide">
-                <ul className="img_slide">
-                    <li className="slide"><img src="/src/resources/images/main/img_test01.jpg" alt="이미지1" /></li>
-                    <li className="slide"><img src="/src/resources/images/main/img_test02.jpg" alt="이미지2" /></li>
-                    <li className="slide"><img src="/src/resources/images/main/img_test03.jpg" alt="이미지3" /></li>
+                <ul className="slide_list">
+                    <li className="slide bg_slide01">
+                    </li>
+                    <li className="slide bg_slide02">
+                    </li>
+                    <li className="slide bg_slide03">
+                    </li>
                 </ul>
                 <ul className="dot_slide">
-                    <li><button className="demo on" data-count="0" onClick={this.currentDiv}>1</button></li>
-                    <li><button className="demo" data-count="1" onClick={this.currentDiv}>2</button></li>
-                    <li><button className="demo" data-count="2" onClick={this.currentDiv}>3</button></li>
+                    <li><button className="dot_nav on" data-count="0" onClick={this.currentDiv}>1</button></li>
+                    <li><button className="dot_nav" data-count="1" onClick={this.currentDiv}>2</button></li>
+                    <li><button className="dot_nav" data-count="2" onClick={this.currentDiv}>3</button></li>
                 </ul>
             </div>
             <h2>공지</h2>
