@@ -5,7 +5,7 @@ class Main extends React.Component {
 
     currentDiv = (e) => {
         const index = e.target.dataset.count;
-        console.log(e);
+        //console.log(e);
         this.slideShow(index);
     };
 
@@ -14,19 +14,19 @@ class Main extends React.Component {
             this.state.count = n;
         }
         const target = document.querySelectorAll(".slide");  //slide1에 대한 dom 참조
-        const dots = document.querySelectorAll(".dot_slide li");
+        const dots = document.querySelectorAll(".dot_slide li button");
         for(let i = 0; i < target.length; i++) {
             target[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
         }
         for (let i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" on", "");
+            dots[i].className = dots[i].className.replace("on", "");
         }
         this.state.count++;
         if(this.state.count > target.length) {
             this.state.count = 1;  //인덱스가 초과되면 1로 변경
         }
         target[this.state.count-1].style.display = "block";  //해당 인덱스는 block으로
-        dots[this.state.count-1].className += " on";
+        dots[this.state.count-1].className += "on";
     };
 
     componentDidMount () {

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { router, Link, NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
 
     render(){
 
         return (
-            <header id="header">
-                <h1 className="ci"><NavLink activeClassName="active" exact to={"/"}><img src="/src/resources/images/common/header_logo_20180817.gif" alt="saramin" /></NavLink></h1>
+            <header id="header" className={'main'}>
+                <h1 className="bi"><NavLink activeClassName="active" exact to={"/"}><img src="/src/resources/images/common/header_logo_main.png" alt="saramin" /></NavLink></h1>
                 <ul className="nav">
                     <li><NavLink activeClassName="active" to={"/hr/companyInfo"}>사람인HR</NavLink>
                         <div className="box_depth2">

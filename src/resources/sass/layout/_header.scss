@@ -1,10 +1,13 @@
 #header {position:relative;width:970px;height:90px;margin:0 auto;z-index:100;}
-#header .ci {position:absolute;left:0;top:45px;}
-#header .nav {position:absolute;left:165px;top:55px;width:620px;}
-#header .nav li {float:left;font-size:18px;margin-left:65px;font-weight:bold}
+#header .bi {position:absolute;left:0;top:37px;}
+#header .nav {position:absolute;right:130px;top:55px;width:620px;}
+#header .nav li {float:left;font-size:18px;margin-left:60px;font-weight:bold}
 #header .nav li .box_depth2 {display:none;position:absolute;left:0;top:19px;padding:10px;}
 #header .util_option {position:absolute;right:0;top:60px;width:140px;}
 #header .util_option li {float:left;margin-left:10px;text-align:right;font-size:11px;color:#848484}
-#header .util_option li a.bg_round {padding:2px 12px;background-color:#3557af;border-radius:8px;color:#fff;}
+#header .util_option li a.bg_round {padding:2px 12px 1px;background-color:#3557af;border-radius:8px;color:#fff;}
+
+#header.main .nav a {color:#fff}
+#header.main .util_option li a {color:#fff}
 
 .dot_slide {position:absolute;right:0;bottom:0;}
