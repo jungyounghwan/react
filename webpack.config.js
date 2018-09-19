@@ -48,5 +48,13 @@ module.exports = {
     devtool: 'source-map',
     resolve: {
         extensions: ['*', '.js', '.jsx']
+    },
+    devServer: {
+        port: 7777,
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+         contentBase: './' ,
+         publicPath : '/public/'
     }
 };
