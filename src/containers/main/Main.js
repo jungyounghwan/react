@@ -3,12 +3,13 @@ import React from 'react';
 class Main extends React.Component {
     state = {count: 1};
 
-    currentDiv = function (e) {
+    currentDiv = (e) => {
         const index = e.target.dataset.count;
+        console.log(e);
         this.slideShow(index);
     };
 
-    slideShow = function (n) {
+    slideShow = (n) => {
         if(n !== undefined){
             this.state.count = n;
         }
@@ -40,24 +41,21 @@ class Main extends React.Component {
 
     render() {
         return (
-        <div id="container" className="main">
-            <div className="box_slide">
-                <ul className="slide_list">
-                    <li className="slide bg_slide01">
-                    </li>
-                    <li className="slide bg_slide02">
-                    </li>
-                    <li className="slide bg_slide03">
-                    </li>
-                </ul>
-                <ul className="dot_slide">
-                    <li><button className="on" data-count="0" onClick={this.currentDiv}>1</button></li>
-                    <li><button className="" data-count="1" onClick={this.currentDiv}>2</button></li>
-                    <li><button className="" data-count="2" onClick={this.currentDiv}>3</button></li>
-                </ul>
+            <div id="container" className="main">
+                <div className="box_slide">
+                    <ul className="slide_list">
+                        <li className="slide bg_slide01"></li>
+                        <li className="slide bg_slide02"></li>
+                        <li className="slide bg_slide03"></li>
+                    </ul>
+                    <ul className="dot_slide">
+                        <li><button className="on" data-count="0" onClick={this.currentDiv}>1</button></li>
+                        <li><button className="" data-count="1" onClick={this.currentDiv}>2</button></li>
+                        <li><button className="" data-count="2" onClick={this.currentDiv}>3</button></li>
+                    </ul>
+                </div>
+                <h2>공지</h2>
             </div>
-            <h2>공지</h2>
-        </div>
         );
     }
 }

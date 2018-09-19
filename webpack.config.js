@@ -9,12 +9,11 @@ module.exports = {
     ],
     output: {
         path : path.resolve(__dirname, 'public'),
-        publicPath: '/',
-        filename: './js/App.js'
+        filename: 'js/app.js'
     },
-    plugins: [
+   plugins: [
         new ExtractTextPlugin({
-            filename: './css/App.css'
+            filename: 'css/app.css'
         })
     ],
     module: {
@@ -49,12 +48,5 @@ module.exports = {
     devtool: 'source-map',
     resolve: {
         extensions: ['*', '.js', '.jsx']
-    },
-    devServer: {
-        port: 7777,
-        historyApiFallback: true,
-        hot: true,
-        inline: true
-        /*contentBase: './dist'*/
     }
 };

@@ -7,8 +7,8 @@ class Header extends React.Component {
 
         return (
             <header id="header">
-                <h1 class="ci"><NavLink activeClassName="active" exact to={"/"}><img src="/src/resources/images/common/header_logo_20180817.gif" alt="saramin" /></NavLink></h1>
-                <ul class="nav">
+                <h1 className="ci"><NavLink activeClassName="active" exact to={"/"}><img src="/src/resources/images/common/header_logo_20180817.gif" alt="saramin" /></NavLink></h1>
+                <ul className="nav">
                     <li><NavLink activeClassName="active" to={"/hr/companyInfo"}>사람인HR</NavLink>
                         <div className="box_depth2">
                             <ul>
@@ -63,7 +63,7 @@ class Header extends React.Component {
                     </li>
                 </ul>
                 <div>
-                    <ul class="util_option">
+                    <ul className="util_option">
                         <li><NavLink activeClassName="active" to={"/etc/sitemap"}>SITEMAP</NavLink></li>
                         <li><NavLink className="bg_round" activeClassName="active" to={"/en/"}>ENGLISH</NavLink></li>
                     </ul>
