@@ -5,7 +5,7 @@ const AutoPreFixer = require('autoprefixer');
 
 module.exports = {
     entry: [
-        'babel-polyfill', './src/index.js'
+        '@babel/polyfill', './src/index.js'
     ],
     output: {
         path : path.resolve(__dirname, 'public'),
