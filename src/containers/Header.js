@@ -2,17 +2,21 @@ import React from 'react';
 import { router, Link, NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
+    constructor() {
+        super();
+        console.log(React.Children.path.);
+    }
 
     render(){
 
         return (
-            <header id="header" className={'main'}>
+            <header id="header" className={this.props}>
                 <h1 className="bi"><NavLink activeClassName="active" exact to={"/"}><img src="/src/resources/images/common/header_logo_main.png" alt="saramin" /></NavLink></h1>
                 <ul className="nav">
                     <li><NavLink activeClassName="active" to={"/hr/companyInfo"}>사람인HR</NavLink>
                         <div className="box_depth2">
                             <ul>
-                                <li><NavLink activeClassName="active" to={"/hr/companyInfo"}>회사소개</NavLink></li>
+                                <li><NavLink activeClassName="active" to={"/hr/companyInfo"}>회사소개11</NavLink></li>
                                 <li><NavLink activeClassName="active" to={"/hr/ceo"}>CEO인사말</NavLink></li>
                                 <li><NavLink activeClassName="active" to={"/hr/socialContribution"}>사회공헌</NavLink></li>
                                 <li><NavLink activeClassName="active" to={"/hr/family"}>계열사</NavLink></li>
