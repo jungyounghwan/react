@@ -20,13 +20,13 @@ class App extends React.Component {
                 <div id='wrap'>
                     <Header/>
 
-                    <Route exact path="/" component={Main}  />
-                    <Route path='/hr' component={Hr} />
-                    <Route path='/service' component={Service} />
-                    <Route path='/ir' component={Ir} />
-                    <Route path='/pr' component={Pr} />
-                    <Route path='/recruit' component={Recruit} />
-                    <Route path='/etc' component={Sitemap} />
+                    <Route exact path="/main" component={Main}  />
+                    <Route exact path='/hr/companyInfo' component={Hr} />
+                    <Route exact path='/service/jobportal' component={Service} />
+                    <Route exact path='/ir/shareholderComposition' component={Ir} />
+                    <Route exact path='/pr/saraminNews' component={Pr} />
+                    <Route exact path='/recruit/talent' component={Recruit} />
+                    <Route exact path='/etc/sitemap' component={Sitemap} />
 
                     <Footer />
                 </div>
