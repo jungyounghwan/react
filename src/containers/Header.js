@@ -4,7 +4,6 @@ import { router, Link, NavLink } from 'react-router-dom';
 class Header extends React.Component {
     constructor() {
         super();
-        console.log(React.Children.path.);
     }
 
     render(){
