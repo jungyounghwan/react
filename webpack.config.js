@@ -14,6 +14,8 @@ module.exports = {
    plugins: [
         new ExtractTextPlugin({
             filename: 'css/app.css'
+            /*filename: "css/[name].css",
+            allChunks: true*/
         })
     ],
     module: {

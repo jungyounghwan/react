@@ -1,23 +1,102 @@
-html {color:#000;background:#fff}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,button {margin:0;padding:0}
-table {border-collapse:collapse;border-spacing:0;font-size:inherit;line-height:100%}
-fieldset,img {border:0}
-address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal}
-strong, b {font-weight:bold}
-ol,ul,li {list-style:none}
-caption,th {text-align:left}
-h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
-q:before,q:after {content:''}
-del, ins {text-decoration:none}
-abbr,acronym {border:0;font-variant:normal}
-sup {vertical-align:text-top}
-sub {vertical-align:text-bottom}
-legend {color:#000}
-a {color:#444;text-decoration:none}
-input, button, textarea, select, optgroup, option {font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
-input, button, textarea, select {*font-size:100%;line-height:normal}
-button {cursor:pointer}
-*{-webkit-text-size-adjust:none}
+html,
+body,
+header,
+nav,
+aside,
+main,
+article,
+section,
+footer,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+em,
+address,
+blockquote,
+q,
+form,
+fieldset,
+input,
+textarea,
+select,
+button,
+iframe {
+  @include cssDefault;
+}
 
-.hidden, .blind {position:absolute;width:1px;height:1px;clip:rect(1px, 1px, 1px, 1px)}
-.ellipsis {overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+body {
+  color: $fontColor;
+  font-family:$fontFamily;
+  font-size:$fontSize;
+}
+header,
+nav,
+aside,
+main,
+article,
+section,
+footer {
+  display:block;
+}
+input,
+textarea,
+select,
+button {
+  border-radius:0;
+  box-sizing:border-box;
+  font-family:inherit;
+}
+ul,
+ol {
+  list-style:none;
+}
+blockquote,
+q {
+  quotes:none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content:"";
+}
+img,
+fieldset,
+iframe {
+  border:none;
+}
+hr {
+  display:none;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+em,
+address {
+  font-style:normal;
+}
+a {
+  color:$linkColor;
+  text-decoration:none;
+}
+button {
+  border:none;
+  border-radius:0;
+  background:none;
+  cursor:pointer;
+}
+.hidden, .blind {
+  @include blind();
+}
+.ellipsis {
+  @include ellipsis();
+}
