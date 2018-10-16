@@ -28,7 +28,7 @@
         float: left;
         position: relative;
         padding: 0 8px;
-        @include bgImg("/src/resources/images/common/footer_navi_line.gif", no-repeat, 0, 1px);
+        @include bgImg("/src/resources/images/common/footer_navi_line.gif", no-repeat, 0, 4px);
 
         &:first-child {
           padding-left: 0;
