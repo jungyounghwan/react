@@ -35,7 +35,7 @@ class Main extends React.Component {
     componentDidMount () {
         this.interval = setInterval(() => {
             this.slideShow();
-        }, 4000);
+        }, 5000);
     }
 
     componentWillUnmount () {
@@ -45,7 +45,7 @@ class Main extends React.Component {
     render() {
         return (
             <div id="container" className="main">
-                <div className="box_slide">
+                <div className="area_slide">
                     <ul className="slide_list">
                         <li className="slide bg_slide01">
                             <span className="slide_name" style={{display:'block'}}>꿈</span>
@@ -93,7 +93,46 @@ class Main extends React.Component {
                         <li><button className="" data-count="2" onClick={this.currentDiv}>3</button></li>
                     </ul>
                 </div>
-                <h2>공지</h2>
+                <div className="area_info">
+                    <ul className="box_link">
+                        <li className="bg_link01">
+                            <a href="#">
+                                <strong>사람인이야기</strong>
+                                <p>사람인이 들려주는 다양하고<br />재미난 이야기를 만나실 수<br /> 있습니다.</p>
+                                <span>GO</span>
+                            </a>
+                        </li>
+                        <li className="bg_link02">
+                            <a href="#">
+                                <strong>나눔이야기</strong>
+                                <p>사람인은 아람인 캠페인을<br />통해 이웃사랑을 실천해<br />나가고 있습니다.</p>
+                                <span>GO</span>
+                            </a>
+                        </li>
+                        <li className="bg_link03">
+                            <a href="#">
+                                <strong>인재채용</strong>
+                                <p>사람을 중시하는 따뜻한<br />기업 사람인의 일원이<br />되세요.</p>
+                                <span>GO</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div className="box_board">
+                        <div className="tab_title">
+                            <button type="button" className="on">보도기사</button>
+                            <button type="button">사람인 News</button>
+                            <button type="button">수상내역</button>
+                        </div>
+                        <ul className="tab_cont">
+                            <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span> </li>
+                            <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
+                            <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
+                            <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
+                        </ul>
+                        <a href="#" className="allView">&lt; 전체보기</a>
+                    </div>
+                </div>
+
             </div>
         );
     }

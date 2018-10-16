@@ -1,8 +1,9 @@
 .main {
   min-width: 980px;
-  .box_slide {
-    position: relative;
-    top: -90px;
+  position: absolute;
+  top: -90px;
+  .area_slide {
+    position:relative;
     height: 704px;
     overflow: hidden;
     .slide_list {
@@ -13,7 +14,7 @@
       li .slide_name {
         display: none;
         position: absolute;
-        top: 145px;
+        top: 142px;
         left: 50%;
         padding-left: 400px;
         font-weight: bold;
@@ -111,10 +112,113 @@
         text-indent: -9999px;
       }
       button.on {
-        background-image: #0a6091;
+        background-color: #0a6091;
       }
       li:first-child button.on {
-        background-image: #8cc922;
+        background-color: #8cc922;
+      }
+    }
+  }
+
+  .area_info {
+    width:970px;
+    margin:0 auto;
+    @include clearfix();
+    ul.box_link {
+      float:left;
+      width:630px;
+      font-size:11px;
+      color:#6e6e6e;
+      @include clearfix();
+      li {
+        float:left;
+        width:130px;
+        padding:18px 10px 24px 70px;
+        &.bg_link01 {
+          @include bgImg("/src/resources/images/main/bg_box_link01.png", no-repeat, 0, 30px);
+        }
+        &.bg_link02 {
+          @include bgImg("/src/resources/images/main/bg_box_link02.png", no-repeat, 0, 30px);
+        }
+        &.bg_link03 {
+          @include bgImg("/src/resources/images/main/bg_box_link03.png", no-repeat, 0, 30px);
+        }
+      }
+      strong {
+        font-size:14px;
+        color:#242323;
+      }
+      p {
+        margin-top:7px;
+      }
+      span {
+        display:block;
+        margin-top:10px;
+        width:41px;
+        height:15px;
+        border-radius: 7px;
+        background-color:#e2e2e2;
+        font-size:8px;
+        text-align:center;
+        color:#6e6e6e;
+      }
+    }
+    div.box_board {
+      position:relative;
+      float:left;
+      width:330px;
+      padding:0 0 24px 10px;
+      font-size:11px;
+      color:#706f6f;
+      div.tab_title {
+        margin-top:15px;
+        button {
+          position:relative;
+          font-size: $fontSize;
+          color:#706f6f;
+          font-weight:bold;
+          padding:0 11px;
+          &.on, &:hover {
+            color:#242323;
+          }
+          &:after {
+            position:absolute;
+            top:4px;
+            right:0;
+            width:1px;
+            height:11px;
+            background-color:#cfcfcf;
+            content:"";
+          }
+          &:first-child {
+            padding-left:0;
+          }
+          &:last-child {
+            &:after {
+              display:none;
+            }
+          }
+        }
+      }
+      ul.tab_cont {
+        margin-top:10px;
+        a {
+          @include ellipsis(75%);
+          display:inline-block;
+          &:hover {
+            text-decoration:underline;
+          }
+        }
+        span {
+          display:inline-block;
+          vertical-align:top;
+          padding-left:25px;
+        }
+      }
+      a.allView {
+        position:absolute;
+        right:0;
+        top:18px;
       }
     }
   }

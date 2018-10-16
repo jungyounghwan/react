@@ -1,5 +1,6 @@
 #header {
   position: relative;
+  top:0;
   @include size(980px, 90px);
   margin: 0 auto;
   z-index: 100;
