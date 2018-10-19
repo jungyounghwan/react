@@ -10,6 +10,7 @@ import Ir from './containers/ir/ShareholderComposition';
 import Pr from './containers/pr/SaraminNews';
 import Recruit from './containers/recruit/Talent';
 import Sitemap from './containers/etc/Sitemap';
+import ComponentIndex from './components/Index';
 
 import './resources/sass/app.scss';
 
@@ -27,8 +28,10 @@ class App extends React.Component {
                     <Route exact path='/pr/saraminNews' component={Pr} />
                     <Route exact path='/recruit/talent' component={Recruit} />
                     <Route exact path='/etc/sitemap' component={Sitemap} />
+                    <Route exact path='/components/index' component={ComponentIndex} />
 
                     <Footer />
+
                 </div>
             </Router>
         )

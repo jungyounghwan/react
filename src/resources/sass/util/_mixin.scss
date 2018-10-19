@@ -6,7 +6,6 @@
   padding:0;
 }
 
-
 // 히든 텍스트 반복 구문
 @mixin blind() {
   overflow:hidden;
@@ -15,7 +14,6 @@
   height:1px;
   clip:rect(1px, 1px, 1px, 1px);
 }
-
 
 // clearfix 반복 구문
 @mixin clearfix() {
@@ -27,7 +25,6 @@
   }
 }
 
-
 // 말줄임 반복 구문
 @mixin ellipsis($width:$full) {
   display:block;
@@ -36,58 +33,27 @@
   text-overflow:ellipsis;
   white-space:nowrap;
 }
-// @include ellipsis(200px); => (width)
-// @include ellipsis(); => width 값 생략 시 기본값 100% 적용
-
 
 // 가로*세로 크기 동시 적용
 @mixin size($width, $height:$width) {
   width:$width;
   height:$height;
 }
-// @include size(300px, 100px); => (width, height) 순
-// @include size(300px); => height 값 생략 시 width 값과 동일하게 적용
-
 
 // 배경 이미지
 @mixin bgImg($value, $repeat, $positionX:$zero, $positionY:$positionX) {
   background:url($value) $repeat $positionX $positionY;
 }
-// @include bgImg("image.png", no-repeat, 50%, 0); => (x, y) 순
-// @include bgImg("text2.png", no-repeat, 50%); => y 값 생략 시 x 값과 동일하게 적용
-// @include bgImg("text3.png", no-repeat); => x, y 값 생략 시 기본값 0 0 적용
-// background:url($image + "img.png") no-repeat; => mixin 쓰지 않고 그냥 이렇게 써도 됩니다.
-
-
-// 모달 용 배경 반복 구문
-@mixin bgModal() {
-  @include bgRgba(0.8);
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:50;
-  width:$full;
-  height:$full;
-}
-
 
 // 가로 그라데이션
 @mixin gradientX($startColor, $endColor, $startPosition:0%, $endPosition:100%) {
   background-image:linear-gradient(to right, $startColor $startPosition, $endColor $endPosition);
 }
-// @include gradientX(#f00, #00f, 20%, 80%); => (시작컬러, 끝컬러, 시작지점, 끝지점) 순
-// @include gradientX(#f00, #00f, 50%); => 끝지점 생략 시 기본값 100% 적용
-// @include gradientX(#f00, #00f); => 시작지점, 끝지점 생략 시 기본값 0%, 100% 적용
-
 
 // 세로 그라데이션
 @mixin gradientY($startColor, $endColor, $startPosition:0%, $endPosition:100%) {
   background-image:linear-gradient(to bottom, $startColor $startPosition, $endColor $endPosition);
 }
-// @include gradientY(#f00, #00f, 20%, 80%); // (시작컬러, 끝컬러, 시작지점, 끝지점) 순
-// @include gradientY(#f00, #00f, 50%); // 끝지점 생략 시 기본값 100% 적용
-// @include gradientY(#f00, #00f); // 시작지점, 끝지점 생략 시 기본값 0%, 100% 적용
-
 
 // 탭 만들기
 @mixin makeTab($child) {

@@ -1,8 +1,10 @@
-@import "./util/mixin";
-@import "./util/variable";
-@import "./base/typography";
-@import "./base/reset";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./layout/container";
-@import "./main/main";
+@charset "utf-8";
+
+@import "util/mixin";
+@import "util/variable";
+@import "base/typography";
+@import "base/reset";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/container";
+@import "pages/main";
