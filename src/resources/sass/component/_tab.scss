@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.tab {
+  width:100%;
+  border-bottom:1px solid #d6d6d6;
+  @include clearfix;
+  &.type_defalt li {
+    display:inline-block;
+    width: 135px;
+    height:33px;
+    border:1px solid #d6d6d6;
+    border-bottom:0 none;
+    text-align:center;
+    line-height:33px;
+    float:left;
+    @include gradientY(#fff, #f1f1f1, 90%, 100%);
+    &.on {
+      @include gradientY(#3358b0, #2a4a93);
+    }
+  }
+}
