@@ -2,6 +2,17 @@
   position: relative;
   z-index: 50
 }
-#container #contents {
-  padding-bottom: 80px;
+#container #wrap_contents {
+  width:980px;
+  margin:0 auto;
+  @include clearfix;
+  #lnb {
+    float:left;
+    width:185px;
+  }
+  #contents {
+    float:left;
+    width:765px;
+    padding-left:30px;
+  }
 }

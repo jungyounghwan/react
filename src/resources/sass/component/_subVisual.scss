@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.sub_visual {
+  height:108px;
+  background:#4876ef;
+  .inner {
+    width:980px;
+    margin:0 auto;
+    text-align:right;
+    p {
+      font-size:30px;
+      color:#fff;
+      line-height:108px;
+    }
+  }
+}

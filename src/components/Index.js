@@ -1,5 +1,9 @@
 import React from 'react';
+import SubVisual from './SubVisual';
+import Location from './Location';
+import ContentsTitle from './ContentsTitle';
 import Tab from './Tab';
+import Lnb from '../containers/Lnb'
 
 class Index extends React.Component {
     render() {
@@ -14,10 +18,21 @@ class Index extends React.Component {
 
 
         return (
-            <div>
-                <Tab {...tabList} /><br />
-                <Tab {...tabList2} />
+            <div id="container">
+                <SubVisual />
 
+                <div id="wrap_contents">
+                    <Location />
+
+                    <Lnb />
+
+                    <div id="contents">
+                        <ContentsTitle />
+
+                        <Tab {...tabList} /><br />
+                        <Tab {...tabList2} />
+                    </div>
+                </div>
             </div>
 
         );

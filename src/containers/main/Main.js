@@ -32,6 +32,20 @@ class Main extends React.Component {
         dots[this.state.count-1].className += "on";
     };
 
+    mainTab = (e) => {
+        const targetEl = e.target.dataset;
+        const btnEl = document.querySelectorAll('.tab_title button')
+        const closeTarget = document.querySelectorAll('.tab_cont');
+        const openTarget = document.getElementById(targetEl.tabCont);
+
+        for (let i = 0; i < closeTarget.length; i++){
+            closeTarget[i].style.display = 'none';
+            btnEl[i].classList.remove('on');
+        }
+        openTarget.style.display = 'block';
+        e.target.classList.add('on');
+    }
+
     componentDidMount () {
         this.interval = setInterval(() => {
             this.slideShow();
@@ -119,17 +133,37 @@ class Main extends React.Component {
                     </ul>
                     <div className="box_board">
                         <div className="tab_title">
-                            <button type="button" className="on">보도기사</button>
-                            <button type="button">사람인 News</button>
-                            <button type="button">수상내역</button>
+                            <button type="button" data-tab-cont="press_release" onClick={this.mainTab} className="on">보도기사</button>
+                            <button type="button" data-tab-cont="saramin_news" onClick={this.mainTab}>사람인 News</button>
+                            <button type="button" data-tab-cont="saramin_awards" onClick={this.mainTab}>수상내역</button>
                         </div>
-                        <ul className="tab_cont">
-                            <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span> </li>
-                            <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
-                            <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
-                            <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
-                        </ul>
-                        <a href="#" className="allView">&lt; 전체보기</a>
+                        <div className="tab_cont" id="press_release">
+                            <ul>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span> </li>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다1</a> <span className="board_date">2011.08.31</span></li>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
+                            </ul>
+                            <a href="#" className="allView">&lt; 전체보기</a>
+                        </div>
+                        <div className="tab_cont" id="saramin_news">
+                            <ul>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span> </li>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다2</a> <span className="board_date">2011.08.31</span></li>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
+                            </ul>
+                            <a href="#" className="allView">&lt; 전체보기</a>
+                        </div>
+                        <div className="tab_cont" id="saramin_awards">
+                            <ul>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span> </li>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다3</a> <span className="board_date">2011.08.31</span></li>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
+                                <li><a href="#">사람인 2년 연속 정보보호 안전을 위해 더욱 노력하다</a> <span className="board_date">2011.08.31</span></li>
+                            </ul>
+                            <a href="#" className="allView">&lt; 전체보기</a>
+                        </div>
                     </div>
                 </div>
 

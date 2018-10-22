@@ -202,25 +202,29 @@
           }
         }
       }
-      ul.tab_cont {
-        margin-top:10px;
-        a {
-          @include ellipsis(75%);
-          display:inline-block;
-          &:hover {
-            text-decoration:underline;
+      #saramin_news,
+      #saramin_awards {display:none;}
+      .tab_cont{
+        ul {
+          margin-top:10px;
+          a {
+            @include ellipsis(75%);
+            display:inline-block;
+            &:hover {
+              text-decoration:underline;
+            }
+          }
+          span {
+            display:inline-block;
+            vertical-align:top;
+            padding-left:25px;
           }
         }
-        span {
-          display:inline-block;
-          vertical-align:top;
-          padding-left:25px;
+        a.allView {
+          position:absolute;
+          right:0;
+          top:18px;
         }
-      }
-      a.allView {
-        position:absolute;
-        right:0;
-        top:18px;
       }
     }
   }
