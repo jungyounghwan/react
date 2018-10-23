@@ -96,7 +96,7 @@ class App extends React.Component {
 
                     <Route exact path='/etc/sitemap' component={Sitemap} />
 
-                    /* test page */
+                    {/* test page */}
                     <Route exact path='/components/index' component={ComponentIndex} />
 
                     <Footer />
