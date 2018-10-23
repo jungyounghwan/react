@@ -6,11 +6,12 @@ class Header extends React.Component {
     render(){
 
         const pathname = location.pathname.split('/');
+        const mainPath = location.pathname;
         console.log(pathname);
 
         return (
-            <header id="header" className={pathname[1]}>
-                <h1 className="bi"><NavLink activeClassName="active" exact exact to={"/main"}><img src={"/src/resources/images/common/header_logo"+(pathname[1]==='main'?'_main':'')+".png"} alt="saramin" /></NavLink></h1>
+            <header id="header" className={mainPath == '/' ? 'main' : pathname[1]}>
+                <h1 className="bi"><NavLink activeClassName="active" exact to={"/"}><img src={"/src/resources/images/common/header_logo"+(mainPath==='/'?'_main':'')+".png"} alt="saramin" /></NavLink></h1>
                 <ul className="nav">
                     <li><NavLink activeClassName="active" exact to={"/hr/companyInfo"}>사람인HR</NavLink>
                         <div className="box_depth2">
