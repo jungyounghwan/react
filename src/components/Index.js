@@ -1,6 +1,6 @@
 import React from 'react';
 import SubVisual from './SubVisual';
-import Location from './SubLocation';
+import SubLocation from './SubLocation';
 import ContentsTitle from './ContentsTitle';
 import Tab from './Tab';
 import Lnb from '../containers/Lnb'
