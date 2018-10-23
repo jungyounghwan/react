@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Location extends React.Component {
+class SubLocation extends React.Component {
 
     render(){
 
@@ -12,4 +12,4 @@ class Location extends React.Component {
     }
 }
 
-export default Location;
+export default SubLocation;

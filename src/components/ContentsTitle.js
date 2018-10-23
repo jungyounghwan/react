@@ -6,7 +6,7 @@ class ContentsTitle extends React.Component {
 
         return (
             <div className="contents_title">
-                <p>page title - 한글</p>
+                <h2>page title - 한글</h2>
             </div>
         );
     }

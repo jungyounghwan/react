@@ -1,11 +1,30 @@
 import React from 'react';
+import SubVisual from '../../components/SubVisual';
+import SubLocation from '../../components/SubLocation';
+import Lnb from '../Lnb';
+import ContentsTitle from '../../components/ContentsTitle';
 
-const Talent = () => {
-    return (
-        <div id="container">
-            <h2>Talent</h2>
-        </div>
-    )
+class Talent extends React.Component {
+
+    render(){
+        return (
+            <div id="container">
+                <SubVisual />
+
+                <div id="wrap_contents">
+                    <SubLocation />
+
+                    <Lnb />
+
+                    <div id="contents">
+                        <ContentsTitle />
+
+                        <p>{location.pathname}</p>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default Talent;

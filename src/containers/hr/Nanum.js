@@ -4,7 +4,7 @@ import SubLocation from '../../components/SubLocation';
 import Lnb from '../Lnb';
 import ContentsTitle from '../../components/ContentsTitle';
 
-class Jobportal extends React.Component {
+class Nanum extends React.Component {
 
     render(){
         return (
@@ -27,4 +27,4 @@ class Jobportal extends React.Component {
     }
 }
 
-export default Jobportal;
+export default Nanum;

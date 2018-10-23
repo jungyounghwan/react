@@ -1,6 +1,6 @@
 import React from 'react';
 import SubVisual from './SubVisual';
-import Location from './Location';
+import Location from './SubLocation';
 import ContentsTitle from './ContentsTitle';
 import Tab from './Tab';
 import Lnb from '../containers/Lnb'
@@ -22,7 +22,7 @@ class Index extends React.Component {
                 <SubVisual />
 
                 <div id="wrap_contents">
-                    <Location />
+                    <SubLocation />
 
                     <Lnb />
 

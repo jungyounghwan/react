@@ -4,9 +4,6 @@ import { Link, NavLink } from 'react-router-dom';
 class Lnb extends React.Component {
 
     render(){
-        const pathname = location.pathname.split('/');
-        console.log(pathname);
-
         return (
             <div id="lnb">
                 <ul className="nav">
@@ -58,9 +55,9 @@ class Lnb extends React.Component {
                                 <li><NavLink activeClassName="active" exact to={"/ir/shareholderComposition"}>기업지배구조</NavLink>
                                     <div className="box_depth3">
                                         <ul>
-                                            <li><NavLink activeClassName="active" exact to={"/service/shareholderComposition"}>주주구성</NavLink></li>
-                                            <li><NavLink activeClassName="active" exact to={"/service/directorate"}>이사회 &amp; 운영규정</NavLink></li>
-                                            <li><NavLink activeClassName="active" exact to={"/service/articlesAssociation"}>정관</NavLink></li>
+                                            <li><NavLink activeClassName="active" exact to={"/ir/shareholderComposition"}>주주구성</NavLink></li>
+                                            <li><NavLink activeClassName="active" exact to={"/ir/directorate"}>이사회 &amp; 운영규정</NavLink></li>
+                                            <li><NavLink activeClassName="active" exact to={"/ir/articlesAssociation"}>정관</NavLink></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -79,7 +76,7 @@ class Lnb extends React.Component {
                                 <li><NavLink activeClassName="active" exact to={"/pr/pressRelease"}>보도자료</NavLink></li>
                                 <li><NavLink activeClassName="active" exact to={"/pr/saraminAwards"}>수상내역</NavLink></li>
                                 <li><NavLink activeClassName="active" exact to={"/pr/webzine"}>웹진</NavLink></li>
-                                <li><NavLink activeClassName="active" exact to={"/pr/pressAd"}>광고</NavLink></li>
+                                <li><NavLink activeClassName="active" exact to={"/pr/ad"}>광고</NavLink></li>
                             </ul>
                         </div>
                     </li>
