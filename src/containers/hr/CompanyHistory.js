@@ -1,27 +1,12 @@
 import React from 'react';
-import SubVisual from '../../components/SubVisual';
-import SubLocation from '../../components/SubLocation';
-import Lnb from '../Lnb';
-import ContentsTitle from '../../components/ContentsTitle';
 
 class CompanyHistory extends React.Component {
 
     render(){
         return (
-            <div id="container">
-                <SubVisual />
-
-                <div id="wrap_contents">
-                    <SubLocation />
-
-                    <Lnb />
-
-                    <div id="contents">
-                        <ContentsTitle />
-
-                        <p>{location.pathname}</p>
-                    </div>
-                </div>
+            <div>
+                <p>{location.pathname}</p>
+                22222
             </div>
         )
     }

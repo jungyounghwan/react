@@ -1,27 +1,11 @@
 import React from 'react';
-import SubVisual from '../../components/SubVisual';
-import SubLocation from '../../components/SubLocation';
-import Lnb from '../Lnb';
-import ContentsTitle from '../../components/ContentsTitle';
 
 class Ad extends React.Component {
 
     render(){
         return (
-            <div id="container">
-                <SubVisual />
+            <div>
 
-                <div id="wrap_contents">
-                    <SubLocation />
-
-                    <Lnb />
-
-                    <div id="contents">
-                        <ContentsTitle />
-
-                        <p>{location.pathname}</p>
-                    </div>
-                </div>
             </div>
         )
     }

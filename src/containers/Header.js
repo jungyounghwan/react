@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
 
@@ -7,7 +7,6 @@ class Header extends React.Component {
 
         const pathname = location.pathname.split('/');
         const mainPath = location.pathname;
-        console.log(pathname);
 
         return (
             <header id="header" className={mainPath == '/' ? 'main' : pathname[1]}>
