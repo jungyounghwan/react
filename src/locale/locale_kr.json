@@ -1,0 +1,225 @@
+{
+
+  "main" : {
+  	
+  },
+  "menu" : [
+  	{
+  		"id" : "hr",
+  		"name" : "사람인HR",
+  		"uri" : "/hr/companyInfo",
+  		"sub" : [
+  			{
+  				"id" : "hr_companyInfo",
+  				"name" : "회사소개",
+  				"uri" : "/hr/companyInfo",
+  				"sub" : [
+  					{
+  						"id" : "sub_hr_companyInfo",
+  						"name" : "회사개요",
+  						"uri" : "/hr/companyInfo"
+  					},
+  					{
+  						"id" : "sub_hr_companyHistory",
+  						"name" : "회사연혁",
+  						"uri" : "/hr/companyHistory"
+  					},
+  					{
+  						"id" : "sub_hr_visionMission",
+  						"name" : "기업비전",
+  						"uri" : "/hr/visionMission"
+  					},
+  					{
+  						"id" : "sub_hr_ci",
+  						"name" : "CI소개",
+  						"uri" : "/hr/ci"
+  					}
+  				]
+  			},
+  			{
+  				"id" : "hr_ceo",
+  				"name" : "CEO인사말",
+  				"uri" : "/hr/ceo"
+  			},
+  			{
+  				"id" : "hr_aramin",
+  				"name" : "사회공헌",
+  				"uri" : "/hr/aramin",
+  				"sub" : [
+  					{
+  						"id" : "hr_aramin",
+  						"name" : "아람인",
+  						"uri" : "/hr/aramin"
+  					},
+  					{
+  						"id" : "hr_csr",
+  						"name" : "사회공헌활동",
+  						"uri" : "/hr/csr"
+  					},
+  					{
+  						"id" : "hr_nanum",
+  						"name" : "나눔이야기기",
+  						"uri" : "/hr/nanum"
+  					}
+  				]
+  			},
+  			{
+  				"id" : "hr_family",
+  				"name" : "계열사",
+  				"uri" : "/hr/family"
+  			},
+  			{
+  				"id" : "hr_contact",
+  				"name" : "Contact",
+  				"uri" : "/hr/contact",
+  				"sub" : [
+  					{
+  						"id" : "hr_contact",
+  						"name" : "연락처",
+  						"uri" : "/hr/contact"
+  					},
+  					{
+  						"id" : "hr_location",
+  						"name" : "오시는길",
+  						"uri" : "/hr/location"
+  					}
+  				]
+  			}
+  		]
+    },
+    {
+    	"id" : "service",
+    	"name" : "서비스",
+    	"uri" : "/service/jobportal",
+    	"sub" : [
+    		{
+    			"id" : "service_jobportal",
+    			"name" : "취업포털사업",
+    			"uri" : "/service/jobportal"
+    		}
+    	]
+    },
+    {
+    	"id" : "ir",
+    	"name" : "IR",
+    	"uri" : "/ir/shareholderComposition",
+    	"sub" : [
+    		{
+    			"id" : "ir_shareholderComposition",
+    			"name" : "기업지배구조",
+    			"uri" : "/ir/shareholderComposition",
+    			"sub" : [
+    				{
+    					"id" : "sub_ir_shareholderComposition",
+		    			"name" : "주주구성",
+		    			"uri" : "/ir/shareholderComposition"
+		    		},
+		    		{
+		    			"id" : "sub_ir_directorate",
+		    			"name" : "이사회 운영규정",
+		    			"uri" : "/ir/directorate"
+		    		},
+		    		{
+		    			"id" : "sub_ir_articlesAssociation",
+		    			"name" : "정관",
+		    			"uri" : "/ir/articlesAssociation"
+		    		}
+    			]
+    		},
+    		{
+    			"id" : "ir_financialStatements",
+    			"name" : "공시정보",
+    			"uri" : "/ir/financialStatements"
+    		},
+    		{
+    			"id" : "ir_stockInformation",
+    			"name" : "주가정보",
+    			"uri" : "/ir/stockInformation"
+    		},
+    		{
+    			"id" : "ir_financialStatements2",
+    			"name" : "재무제표",
+    			"uri" : "/ir/financialStatements2"
+    		},
+    		{
+    			"id" : "ir_earningsRelease",
+    			"name" : "공고사항",
+    			"uri" : "/ir/earningsRelease"
+    		},
+    		{
+    			"id" : "ir_disclosureManage",
+    			"name" : "내부정보관리규정",
+    			"uri" : "/ir/disclosureManage"
+    		}
+    	]
+    },
+    {
+    	"id" : "pr",
+    	"name" : "홍보센터",
+    	"uri" : "/pr/saraminNews",
+    	"sub" : [
+    		{
+    			"id" : "pr_saraminNews",
+    			"name" : "사람인 NEWS",
+    			"uri" : "/pr/saraminNews"
+    		},
+    		{
+    			"id" : "pr_pressRelease",
+    			"name" : "보도자료",
+    			"uri" : "/pr/pressRelease"
+    		},
+    		{
+    			"id" : "pr_saraminAwards",
+    			"name" : "수상내역",
+    			"uri" : "/pr/saraminAwards"
+    		},
+    		{
+    			"id" : "pr_webzine",
+    			"name" : "웹진",
+    			"uri" : "/pr/webzine"
+    		},
+    		{
+    			"id" : "pr_ad",
+    			"name" : "광고",
+    			"uri" : "/pr/ad"
+    		}
+    	]
+    },
+    {
+    	"id" : "recruit",
+    	"name" : "채용",
+    	"uri" : "/recruit/talent",
+    	"sub" : [
+    		{
+    			"id" : "recruit_talent",
+    			"name" : "인재상",
+    			"uri" : "/recruit/talent"
+    		},
+    		{
+    			"id" : "recruit_education",
+    			"name" : "교육제도",
+    			"uri" : "/recruit/education"
+    		},
+    		{
+    			"id" : "recruit_welfare",
+    			"name" : "복리후생",
+    			"uri" : "/recruit/welfare"
+    		},
+    		{
+    			"id" : "recruit_process",
+    			"name" : "채용절차",
+    			"uri" : "/recruit/process"
+    		},
+    		{
+    			"id" : "recruit_saraminStory",
+    			"name" : "사람인이야기",
+    			"uri" : "/recruit/saraminStory"
+    		}
+    	]
+    }
+  ],
+  "common" : {
+
+  }
+
+}
