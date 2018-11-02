@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* 회사개요 */
+.hr_companyinfo {
+  position:relative;
+  min-height:670px;
+  @include bgImg("/src/resources/images/hr/img_companyinfo02.png", no-repeat, 520px, bottom);
+  dl {
+    position:absolute;
+    dt {
+      font-size:17px;
+      font-weight:bold;
+      color:#444;
+    }
+    dd {
+      margin-top:20px;
+      font-size:13px;
+      font-weight:500;
+      line-height:19px;
+    }
+    &.pos1 {
+      top:0;
+      left:375px;
+    }
+    &.pos2 {
+      top:155px;
+      left:375px;
+    }
+    &.pos3 {
+      top:335px;
+      left:375px;
+    }
+    &.pos4 {
+      top:490px;
+      left:0;
+    }
+  }
+}
+
+/* 회사연혁*/
+.hr_companyhistory {
+  .area_tab {
+    .tab_cont {
+      margin-top:55px;
+      @include bgImg("/src/resources/images/hr/img_companyhistory01.png", no-repeat, 0, 0);
+      .history_list {
+        padding-left:275px;
+        > li {
+          position:relative;
+          margin-bottom:25px;
+          padding-bottom:25px;
+          border-bottom:1px solid #e1e1e1;
+          &:last-child {
+            padding-top:0;
+            border-top:0;
+          }
+        }
+      }
+      .date_y {
+        position:absolute;
+        left:0;
+        top:0;
+        font-size:19px;
+        color:#858585;
+        font-family: Verdana;
+      }
+      dl {
+        padding-left:75px;
+        @include clearfix();
+        dt {
+          float:left;
+          font-size:14px;
+          font-weight:bold;
+          color:#3557af;
+          font-family: Verdana;
+        }
+        dd {
+          float:left;
+          padding-left:20px;
+          font-size:12px;
+          line-height:20px;
+          ul {
+            max-width:370px
+          }
+        }
+
+      }
+    }
+  }
+}
+
+/* CEO인사말 */
+.hr_ceo {
+  min-height:600px;
+  @include bgImg("/src/resources/images/hr/img_ceo.png", no-repeat, right, bottom);
+  .ceo_tit {
+    font-size:40px;
+    color:#a8b6c0;
+    line-height:44px;
+    .color_type01 {
+      font-weight:500;
+      color:#85aeeb;
+    }
+    .color_type02 {
+      font-weight:500;
+      color:#88c651;
+    }
+  }
+  .ceo_cont {
+    margin-top:55px;
+    font-size:15px;
+    color:#777;
+    line-height:22px;
+  }
+}
