@@ -7,14 +7,14 @@ class Lnb extends React.Component {
         return (
             <div id="lnb">
                 <ul className="nav">
-                    <li><NavLink activeClassName="active" exact to={"/hr/companyInfo"}>사람인HR</NavLink>
+                    <li><NavLink activeClassName="active" to={"/hr/companyInfo"}>사람인HR</NavLink>
                         <div className="box_depth2">
                             <ul>
-                                <li><NavLink activeClassName="active" to={"/hr/companyInfo"}>회사소개</NavLink>
+                                <li><NavLink activeClassName="active" exact to={"/hr/companyInfo"}>회사소개</NavLink>
                                     <div className="box_depth3">
                                         <ul>
-                                            <li><NavLink activeClassName="active" to={"/hr/companyInfo"}>회사개요</NavLink></li>
-                                            <li><NavLink activeClassName="active" to={"/hr/companyHistory"}>회사연혁</NavLink></li>
+                                            <li><NavLink activeClassName="active" exact to={"/hr/companyInfo"}>회사개요</NavLink></li>
+                                            <li><NavLink activeClassName="active" exact to={"/hr/companyHistory"}>회사연혁</NavLink></li>
                                             <li><NavLink activeClassName="active" exact to={"/hr/visionMission"}>기업비전 &amp; 미션</NavLink></li>
                                             <li><NavLink activeClassName="active" exact to={"/hr/ci"}>CI소개</NavLink></li>
                                         </ul>

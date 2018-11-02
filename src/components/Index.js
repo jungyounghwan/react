@@ -15,6 +15,10 @@ class Index extends React.Component {
             type : 'defalt',
             name : ['기업비전 & 미션', '5대 핵심가치']
         };
+        const tabList3 = {
+            type : 's',
+            name : ['기업비전 & 미션', '5대 핵심가치']
+        };
 
 
         return (
@@ -31,6 +35,7 @@ class Index extends React.Component {
 
                         <Tab {...tabList} /><br />
                         <Tab {...tabList2} />
+                        <Tab {...tabList3} />
                     </div>
                 </div>
             </div>
