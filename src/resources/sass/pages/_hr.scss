@@ -41,7 +41,6 @@
 .hr_companyhistory {
   .area_tab {
     .tab_cont {
-      margin-top:55px;
       @include bgImg("/src/resources/images/hr/img_companyhistory01.png", no-repeat, 0, 0);
       .history_list {
         padding-left:275px;
@@ -111,5 +110,22 @@
     font-size:15px;
     color:#777;
     line-height:22px;
+  }
+}
+
+/* 사회공헌 - 아람인 */
+.hr_aramin {
+  .text_type1 {
+    padding:20px 0;
+    font-size:18px;
+    font-weight:bold;
+    strong {
+      font-size:20px;
+      color:#333;
+    }
+  }
+  .text_type2 {
+    margin-bottom:15px;
+    font-size: 14px;
   }
 }
