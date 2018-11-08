@@ -47,6 +47,7 @@ module.exports = {
             }
         ]
     },
+    node: { fs: 'empty' },
     devtool: 'source-map',
     resolve: {
         extensions: ['*', '.js', '.jsx']

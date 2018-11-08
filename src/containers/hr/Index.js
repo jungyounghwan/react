@@ -20,11 +20,8 @@ import Location from './Location';
 
 class Hr extends React.Component {
 
-    componentDidUpdate(prevProps, prevState){
-        console.log("componentDidUpdate: " + JSON.stringify(prevProps) + " " + JSON.stringify(prevState));
-    }
-
     render(){
+
         return (
             <Router>
                 <div id="container">
@@ -33,10 +30,10 @@ class Hr extends React.Component {
                     <div id="wrap_contents">
                         <SubLocation />
 
-                        <Lnb />
+                        <Lnb hrData={this.props.hrMenu} />
 
                         <div id="contents">
-                            <ContentsTitle />
+                            <ContentsTitle hrData={this.props.hrMenu} />
 
 
                             <Route exact path='/hr/companyInfo' component={CompanyInfo} />

@@ -15,22 +15,38 @@ import Etc from './containers/etc/index';
 import ComponentIndex from './components/Index';
 
 import './resources/sass/app.scss';
+import lo_kr from './locale/locale_kr.json';
 
 class App extends React.Component {
     render(){
+        const components = {
+            "hr" : Hr,
+            "service" : Service,
+            "ir" : Ir,
+            "pr" : Pr,
+            "recruit" : Recruit
+        };
+
+        console.log(lo_kr.menu);
         return (
             <Router>
                 <div id='wrap'>
-                    <Header/>
+                    <Header menus={lo_kr.menu} />
 
-                    <Route exact path="/" component={Main}  />
-                    <Route path='/hr/**' component={Hr} />
+                    <Route exact path="/" component={Main} />
+                    {
+                        lo_kr.menu.map((menuData, idx) => {
+                            return (<Route key={idx} path={'/'+ menuData.id +'/**'} render={(...props) => <Hr hrMenu={lo_kr.menu[ idx ]} />} />);
+                        })
+                    }
+                {/*
+                    <Route path='/hr/**' component={Hr} hrMenu={lo_kr.menu[ 0 ]} />
                     <Route path='/service/**' component={Service} />
                     <Route path='/ir/**' component={Ir} />
                     <Route path='/pr/**' component={Pr} />
                     <Route path='/recruit/**' component={Recruit} />
                     <Route path='/etc/**' component={Etc} />
-
+*/}
                     {/* test page */}
                     <Route path='/components/index' component={ComponentIndex} />
 
