@@ -1,12 +1,15 @@
-.main + #footer_wrap {top:-90px;}
+
+.main + #footer_wrap {
+  top: -150px;
+}
 #footer_wrap {
-  position:relative;
-  margin-top:60px;
-  width:100%;
-  border-top:1px #c4c4c4 solid;
-  background-color:#fff;
-  font-size:12px;
-  z-index:100;
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  border-top: 1px #c4c4c4 solid;
+  background-color: #fff;
+  font-size: 12px;
+  z-index: 100;
 
   #footer {
     position: relative;
@@ -52,6 +55,19 @@
       padding-bottom: 15px;
       font-size: 11px;
       color: #888;
+    }
+  }
+}
+
+@media screen and (max-width:$sizeMobile) {
+  .main + #footer_wrap {
+    top: -128px;
+  }
+  #footer_wrap {
+    #footer {
+      width: calc(100% - 20px);
+      padding: 30px 10px;
+      background: none;
     }
   }
 }
