@@ -31,8 +31,6 @@ class Ir extends React.Component {
                         <div id="contents">
                             <ContentsTitle />
 
-                            <p>{location.pathname}</p>
-
                             <Route exact path='/ir/shareholderComposition' component={ShareholderComposition} />
                             <Route exact path='/ir/Directorate' component={Directorate} />
                             <Route exact path='/ir/ArticlesAssociation' component={ArticlesAssociation} />

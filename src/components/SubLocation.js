@@ -5,7 +5,7 @@ class SubLocation extends React.Component {
     render(){
 
         return (
-            <div className="location">
+            <div className="sub_location">
                 <p>홈 &gt; 1depth &gt; 2depth &gt; 3depth</p>
             </div>
         );

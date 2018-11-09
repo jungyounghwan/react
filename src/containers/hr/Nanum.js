@@ -4,7 +4,7 @@ class Nanum extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className="nanum">
 
             </div>
         )

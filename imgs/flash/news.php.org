@@ -1,0 +1,64 @@
+<?
+header("Content-type: text/xml"); 
+echo '<?xml version="1.0" encoding="euc-kr"?>'; 
+?>
+<main>
+
+	<newSet>
+<? 
+	 include("../../inc/db.php");
+	
+	$str_press=fn_print('B2');
+	$str_nanum=fn_print('nanum');
+	$str_news=fn_print('B1');
+	$str_awards=fn_print('B4');
+	
+	echo $str_press;
+	echo $str_news;
+	echo $str_awards;
+?>
+	</newSet>
+
+</main>
+
+<?
+function fn_print($code) {
+	if($code=="nanum") $sql="select * from board where bid='nanum' order by idx desc limit 4";
+	else $sql="select * from amboard_basic where code='$code' order by wdate desc,no desc limit 4";
+	
+	 $result=mysql_query($sql);
+	 while($row=mysql_fetch_array($result)) {
+	 	if($code!="nanum") {
+		 	$subject=$row[title];
+		 	if($code=="B1") $url="/open_content/pr/saramin_news.php";
+		 	else if($code=="B2") $url="/open_content/pr/press_release.php";
+		 	else if($code=="B4") $url="/open_content/pr/saramin_awards.php";
+		 	$url.="?group=basic&code=".$code."&abmode=view&no=".$row[no];
+		 	$date=date("Y.m.d",strtotime($row[wdate]));
+		} else {
+		 	$subject=$row[subject];
+		 	$url="/open_content/hr/nanum.php?idx=".$row[idx];
+		 	$date=date("Y.m.d",strtotime($row[dt_insert]));
+		}
+					 	
+	 	$str_print.="
+			<news>
+				<newsTitle><![CDATA[".$subject."]]></newsTitle>
+				<newsUrl><![CDATA[".$url."]]></newsUrl>
+				<newsDate><![CDATA[".$date."]]></newsDate>
+			</news>";
+	}
+	$cnt=mysql_num_rows($result);
+	if($cnt<4) {
+		for($i=0;$i<(4-$cnt);$i++) {
+			$str_print.="
+			<news>
+				<newsTitle><![CDATA[]]></newsTitle>
+				<newsUrl><![CDATA[]]></newsUrl>
+				<newsDate><![CDATA[]]></newsDate>
+			</news>";
+		}
+	}
+	return $str_print;
+}
+?>

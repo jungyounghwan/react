@@ -27,26 +27,27 @@ class App extends React.Component {
             "recruit" : Recruit
         };
 
-        console.log(lo_kr.menu);
+        console.log('lo_kr.menu : ', lo_kr.menu);
+        console.log('components : ', components);
         return (
             <Router>
                 <div id='wrap'>
                     <Header menus={lo_kr.menu} />
 
                     <Route exact path="/" component={Main} />
-                    {
+                    {/*{
                         lo_kr.menu.map((menuData, idx) => {
                             return (<Route key={idx} path={'/'+ menuData.id +'/**'} render={(...props) => <Hr hrMenu={lo_kr.menu[ idx ]} />} />);
                         })
-                    }
-                {/*
-                    <Route path='/hr/**' component={Hr} hrMenu={lo_kr.menu[ 0 ]} />
+                    }*/}
+
+                    <Route path='/hr/**' component={Hr} />
                     <Route path='/service/**' component={Service} />
                     <Route path='/ir/**' component={Ir} />
                     <Route path='/pr/**' component={Pr} />
                     <Route path='/recruit/**' component={Recruit} />
                     <Route path='/etc/**' component={Etc} />
-*/}
+
                     {/* test page */}
                     <Route path='/components/index' component={ComponentIndex} />
 

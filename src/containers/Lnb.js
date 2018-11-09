@@ -7,7 +7,7 @@ class Lnb extends React.Component {
         if (data.sub == undefined) {
             return;
         }
-console.log("submenu", data, depth);
+        console.log("submenu", data, depth);
         const sm = data.sub.map((subMenu, idx) => { 
             return (
                     <li key={idx}><NavLink activeClassName="active" exact to={subMenu.uri}>{subMenu.name}</NavLink>{this.subMenu(subMenu, 3)}</li>
@@ -21,12 +21,12 @@ console.log("submenu", data, depth);
         return (
             <div id="lnb">
                 <ul className="nav">
-                    <li><NavLink activeClassName="active" exact to={this.props.hrData.uri}>{this.props.hrData.name}</NavLink>
+                    {/*<li><NavLink activeClassName="active" exact to={this.props.hrData.uri}>{this.props.hrData.name}</NavLink>
                         {this.subMenu(this.props.hrData, 2)}
-                    </li>
+                    </li>*/}
                 </ul>
                 <div className="lnb_banner">
-                    <p>배너여역</p>
+                    <a href="http://saraminhr.co.kr/10th/" target="_blank" title="새창"><img src="http://saraminhr.co.kr/imgs/pr/bnr_sub10th2.png" alt="사람인HR 창립10주년 기념행사" /></a>
                 </div>
             </div>
         );

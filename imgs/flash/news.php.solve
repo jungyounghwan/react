@@ -1,0 +1,73 @@
+<?
+for($i=0;$i<100000;$i++) {} 
+header("Content-type: text/xml"); 
+echo '<?xml version="1.0" encoding="euc-kr"?>'; 
+?>
+<main>
+
+	<newSet>
+
+			<news>
+				<newsTitle><![CDATA[“男 31세, 女 29세 넘기면 신입 취업 힘들다!”]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/press_release.php?group=basic&code=B2&abmode=view&no=1733]]></newsUrl>
+				<newsDate><![CDATA[2011.11.10]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[“삼성, 롯데 등 대기업 채용 봇물”]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/press_release.php?group=basic&code=B2&abmode=view&no=1732]]></newsUrl>
+				<newsDate><![CDATA[2011.11.08]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[“사람인에서 무료로 연봉보고, 선물도 받자!”]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/press_release.php?group=basic&code=B2&abmode=view&no=1731]]></newsUrl>
+				<newsDate><![CDATA[2011.11.08]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[“신입 채용에 경력자 지원 늘어”]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/press_release.php?group=basic&code=B2&abmode=view&no=1730]]></newsUrl>
+				<newsDate><![CDATA[2011.11.07]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[2011 대한민국 윤리경영 대상 수상!]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/saramin_news.php?group=basic&code=B1&abmode=view&no=11]]></newsUrl>
+				<newsDate><![CDATA[2011.07.08]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[사람인HR 취업포털부문 브랜드 대상 수상!]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/saramin_news.php?group=basic&code=B1&abmode=view&no=10]]></newsUrl>
+				<newsDate><![CDATA[2011.06.30]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[사람인, 구직자 취업성공 기원하며 K5 쐈다!]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/saramin_news.php?group=basic&code=B1&abmode=view&no=9]]></newsUrl>
+				<newsDate><![CDATA[2011.03.30]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[[더 나은 미래] 이정근 사람인 대표 "얼마 전 흑자전환 이뤘지만 사회공헌은 당연히 할 일"]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/saramin_news.php?group=basic&code=B1&abmode=view&no=8]]></newsUrl>
+				<newsDate><![CDATA[2011.02.25]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA['2011 소비자의 선택' 대상 수상!]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/saramin_awards.php?group=basic&code=B4&abmode=view&no=1735]]></newsUrl>
+				<newsDate><![CDATA[2011.11.03]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[2011 대한민국 윤리경영 대상 수상!]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/saramin_awards.php?group=basic&code=B4&abmode=view&no=55]]></newsUrl>
+				<newsDate><![CDATA[2011.07.08]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[2011 한국의 가장 사랑받는 브랜드 대상]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/saramin_awards.php?group=basic&code=B4&abmode=view&no=54]]></newsUrl>
+				<newsDate><![CDATA[2011.06.30]]></newsDate>
+			</news>
+			<news>
+				<newsTitle><![CDATA[2010 일자리창출지원 유공포상]]></newsTitle>
+				<newsUrl><![CDATA[/open_content/pr/saramin_awards.php?group=basic&code=B4&abmode=view&no=53]]></newsUrl>
+				<newsDate><![CDATA[2010.12.29]]></newsDate>
+			</news>
+		</newSet>
+
+</main>
+

@@ -27,6 +27,26 @@
         }
       }
     }
+    &.type_padding li {
+      display:inline-block;
+      height:33px;
+      margin-left:-1px;
+      border:1px solid #d6d6d6;
+      border-bottom:0 none;
+      text-align:center;
+      line-height:33px;
+      float:left;
+      @include gradientY(#fff, #f1f1f1, 90%, 100%);
+      &.active {
+        @include gradientY(#3358b0, #2a4a93);
+        button {
+          color:#fff;
+        }
+      }
+      button {
+        padding: 0 30px;
+      }
+    }
     &.type_s {
       border-bottom:none;
       li {
@@ -51,6 +71,9 @@
         }
       }
     }
+    &.type_s + .tab_cont {
+      margin-top: 5px
+    }
   }
 
   .tab_cont {
@@ -58,6 +81,9 @@
     margin-top:55px;
     &:first-of-type {
       display:block;
+    }
+    .articles_wrap { /* 이전 약관에 대한 대체 */
+      margin-top: -55px;
     }
   }
 }

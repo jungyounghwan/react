@@ -30,12 +30,15 @@ class Hr extends React.Component {
                     <div id="wrap_contents">
                         <SubLocation />
 
-                        <Lnb hrData={this.props.hrMenu} />
+                        {/*<Lnb hrData={this.props.hrMenu} />*/}
+                        <Lnb />
 
                         <div id="contents">
-                            <ContentsTitle hrData={this.props.hrMenu} />
+                            {/*<ContentsTitle hrData={this.props.hrMenu} />*/}
+                            <ContentsTitle />
 
 
+                            {/*<Route exact path='/hr/companyInfo' component={CompanyInfo} hrData={this.props.hrMenu} />*/}
                             <Route exact path='/hr/companyInfo' component={CompanyInfo} />
                             <Route exact path='/hr/companyHistory' component={CompanyHistory} />
                             <Route exact path='/hr/visionMission' component={VisionMission} />
