@@ -24,8 +24,6 @@ class Etc extends React.Component {
                         <div id="contents">
                             <ContentsTitle />
 
-                            <p>{location.pathname}</p>
-
                             <Route exact path='/etc/sitemap' component={Sitemap} />
 
                         </div>

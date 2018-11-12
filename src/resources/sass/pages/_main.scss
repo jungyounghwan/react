@@ -151,6 +151,7 @@
       }
       p {
         margin-top: 7px;
+        letter-spacing: -1px;
       }
       span {
         display: block;
@@ -261,6 +262,16 @@
         li dl dd  p.eng_text {
           padding: 0 10%;
         }
+      }
+      li .slide_name {
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+      }
+      .dot_slide {
+        display: none;
       }
     }
     .area_info {

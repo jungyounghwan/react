@@ -44,14 +44,13 @@
         }
       }
       button {
-        padding: 0 30px;
+        padding: 0 25px;
       }
     }
     &.type_s {
       border-bottom:none;
       li {
         display:inline-block;
-        padding:0 20px;
         height:33px;
         margin-left:-1px;
         border:1px solid #d6d6d6;
@@ -60,6 +59,7 @@
         float:left;
         background-color:#f6f6f6;
         button {
+          padding:0 20px;
           font-size:12px;
         }
         &.active {
@@ -71,8 +71,11 @@
         }
       }
     }
-    &.type_s + .tab_cont {
+    &.type_s > .tab_cont {
       margin-top: 5px
+    }
+    &.type_s > .tab_cont.mt30 {
+      margin-top: 30px;
     }
   }
 
