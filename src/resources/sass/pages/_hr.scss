@@ -4,7 +4,7 @@
 .company_info {
   position:relative;
   min-height:670px;
-  @include bgImg("/src/resources/images/hr/img_companyinfo02.png", no-repeat, 520px, bottom);
+  /*@include bgImg("/src/resources/images/hr/img_companyinfo02.png", no-repeat, 520px, bottom);*/
   dl {
     position:absolute;
     dt {

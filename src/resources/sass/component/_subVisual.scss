@@ -14,3 +14,13 @@
     }
   }
 }
+
+@media screen and (max-width:$sizeMobile) {
+  .sub_visual {
+    height: 1px;
+    .inner {
+      width: 100%;
+      display: none;
+    }
+  }
+}

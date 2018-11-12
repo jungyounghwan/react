@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 #container {
   position: relative;
   z-index: 50
@@ -15,5 +17,19 @@
     float:left;
     width:740px;
     padding-left:33px;
+  }
+}
+
+@media screen and (max-width:$sizeMobile) {
+  #container #wrap_contents {
+    width:100%;
+    #contents {
+      width:100%;
+      overflow-x: auto;
+      padding:0;
+      img {
+        width:auto;
+      }
+    }
   }
 }

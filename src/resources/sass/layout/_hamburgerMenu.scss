@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* menu icon */
+.hamburger_menu {
+    position:absolute;
+    top:0;
+    right:0;
+    .menu_icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 32px 20px;
+        position: relative;
+        user-select: none;
+        .navicon {
+            background: #333;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+        }
+        .navicon:before,
+        .navicon:after {
+            background: #333;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        .navicon:before {
+            top: 5px;
+        }
+        .navicon:after {
+            top: -5px;
+        }
+        ul.menu {
+            display: none;
+        }
+    }
+    .menu_btn {
+        display: none;
+        &:checked ~ .menu {
+            max-height: 240px;
+        }
+        &:checked ~ .menu_icon .navicon {
+            background: transparent;
+        }
+        &:checked ~ .menu_icon .navicon:before {
+            top: -4px;
+            transform: rotate(-45deg);
+        }
+        &:checked ~ .menu_icon .navicon:after {
+            top: -4px;
+            transform: rotate(45deg);
+        }
+        &:checked ~ .menu_icon:not(.steps) .navicon:before,
+        .hamburger_menu .menu_btn:checked ~ .menu_icon:not(.steps) .navicon:after {
+            /*top: 0;*/
+        }
+        &:checked ~ ul.menu {
+            display: block;
+        }
+    }
+}
+.main .hamburger_menu .navicon,
+.main .hamburger_menu .navicon:before,
+.main .hamburger_menu .navicon:after {
+    background: #fff
+}
+
+@media screen and (min-width:$sizeMobile) {
+    .hamburger_menu {
+        display: none;
+    }
+}

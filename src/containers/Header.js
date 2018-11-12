@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import HamburgerMenu from './hamburgerMenu';
+
 class Header extends React.Component {
 
     render(){
@@ -24,6 +26,8 @@ class Header extends React.Component {
                         <li><NavLink className="bg_round" activeClassName="active" exact to={"/en/"}>ENGLISH</NavLink></li>
                     </ul>
                 </div>
+
+                <HamburgerMenu />
             </header>
         );
     }

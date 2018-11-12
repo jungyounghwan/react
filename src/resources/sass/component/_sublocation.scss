@@ -9,3 +9,9 @@
     line-height:40px;
   }
 }
+
+@media screen and (max-width:$sizeMobile) {
+  .sub_location {
+    display: none;
+  }
+}
