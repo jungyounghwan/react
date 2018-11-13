@@ -36,14 +36,60 @@
         .navicon:after {
             top: -5px;
         }
-        ul.menu {
-            display: none;
+    }
+    div.wrap_menu {
+        display: none;
+        .menu_inner {
+            overflow-y: auto;
+            width:100%;
+            h4 {
+                margin-bottom:3vh;
+                font-size: 18px;
+            }
+            a {
+                color:#fff
+            }
+            .menu01, .menu02, .menu03, .menu04, .menu05 {
+                margin-bottom:5vh;
+            }
+            ul {
+                padding:0 10vw;
+                border-bottom: 2px dotted #333;
+                > li {
+                    margin-bottom:3vh;
+                    font-size: 16px;
+                    text-align:left;
+                    ul {
+                        /*display:none;*/
+                        padding: 2vh 0;
+                        border: none;
+                        &:after {
+                            display: table;
+                            table-layout: fixed;
+                            clear: both;
+                            content: "";
+                        }
+                        > li {
+                            float: left;
+                            width: calc(50% - 2vh);
+                            padding: 0 0 0 2vh;
+                            margin-bottom:1vh;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
         }
     }
     .menu_btn {
         display: none;
-        &:checked ~ .menu {
-            max-height: 240px;
+        &:checked ~ div.wrap_menu {
+            display: block;
+        }
+        &:checked ~ .menu_icon .navicon,
+        &:checked ~ .menu_icon .navicon:before,
+        &:checked ~ .menu_icon .navicon:after {
+            background: #fff;
         }
         &:checked ~ .menu_icon .navicon {
             background: transparent;
@@ -60,9 +106,11 @@
         .hamburger_menu .menu_btn:checked ~ .menu_icon:not(.steps) .navicon:after {
             /*top: 0;*/
         }
-        &:checked ~ ul.menu {
-            display: block;
-        }
+    }
+    .wrap_menu {
+        width:100%;
+        height:100%;
+        background:rgba(0, 0, 0, .8);
     }
 }
 .main .hamburger_menu .navicon,
