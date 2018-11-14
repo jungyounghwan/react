@@ -5,12 +5,12 @@ import Header from './containers/Header';
 import Footer from './containers/Footer';
 import Main from './containers/main/Main';
 
-import Hr from './containers/hr/index';
+import Hr from './containers/hr/Index';
 import Service from './containers/service/Index';
-import Ir from './containers/ir/index';
-import Pr from './containers/pr/index';
-import Recruit from './containers/recruit/index';
-import Etc from './containers/etc/index';
+import Ir from './containers/ir/Index';
+import Pr from './containers/pr/Index';
+import Recruit from './containers/recruit/Index';
+import Etc from './containers/etc/Index';
 
 import ComponentIndex from './components/Index';
 
