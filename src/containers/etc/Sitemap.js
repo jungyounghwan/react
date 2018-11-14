@@ -6,80 +6,80 @@ class Sitemap extends React.Component {
         return (
             <div className="sitemap">
                 <div className="sitemap_wrap">
-                    {/*ªÁ∂˜¿ŒHR*/}
+                    {/*ÏÇ¨ÎûåÏù∏HR*/}
                     <div className="menu01">
-                        <h4><a href="/hr/companyInfo"><img src="/imgs/etc/menu01.gif" alt="ªÁ∂˜¿ŒHR"/></a></h4>
+                        <h4><a href="/hr/companyInfo"><img src="/imgs/etc/menu01.gif" alt="ÏÇ¨ÎûåÏù∏HR"/></a></h4>
                         <ul>
-                            <li><a href="/hr/companyInfo"><img src="/imgs/etc/menu01_01.gif" alt="»∏ªÁº“∞≥"/></a>
+                            <li><a href="/hr/companyInfo"><img src="/imgs/etc/menu01_01.gif" alt="ÌöåÏÇ¨ÏÜåÍ∞ú"/></a>
                                 <ul>
-                                    <li><a href="/hr/companyInfo"><img src="/imgs/etc/menu01_01_1.gif" alt="»∏ªÁ∞≥ø‰"/></a></li>
-                                    <li><a href="/hr/companyHistory"><img src="/imgs/etc/menu01_01_2.gif" alt="»∏ªÁø¨«ı"/></a></li>
-                                    <li><a href="/hr/visionMission"><img src="/imgs/etc/menu01_01_3.gif" alt="±‚æ˜∫Ò¡Ø&amp;πÃº«"/></a></li>
-                                    <li><a href="/hr/ci"><img src="/imgs/etc/menu01_01_4.gif" alt="CIº“∞≥"/></a></li>
+                                    <li><a href="/hr/companyInfo"><img src="/imgs/etc/menu01_01_1.gif" alt="ÌöåÏÇ¨Í∞úÏöî"/></a></li>
+                                    <li><a href="/hr/companyHistory"><img src="/imgs/etc/menu01_01_2.gif" alt="ÌöåÏÇ¨Ïó∞ÌòÅ"/></a></li>
+                                    <li><a href="/hr/visionMission"><img src="/imgs/etc/menu01_01_3.gif" alt="Í∏∞ÏóÖÎπÑÏ†º&amp;ÎØ∏ÏÖò"/></a></li>
+                                    <li><a href="/hr/ci"><img src="/imgs/etc/menu01_01_4.gif" alt="CIÏÜåÍ∞ú"/></a></li>
                                 </ul>
                             </li>
-                            <li><a href="/hr/ceo"><img src="/imgs/etc/menu01_02.gif" alt="CEOº“∞≥"/></a></li>
-                            <li><a href="/hr/aramin"><img src="/imgs/etc/menu01_03.gif" alt="ªÁ»∏∞¯«Â"/></a>
+                            <li><a href="/hr/ceo"><img src="/imgs/etc/menu01_02.gif" alt="CEOÏÜåÍ∞ú"/></a></li>
+                            <li><a href="/hr/aramin"><img src="/imgs/etc/menu01_03.gif" alt="ÏÇ¨ÌöåÍ≥µÌóå"/></a>
                                 <ul>
-                                    <li><a href="/hr/aramin"><img src="/imgs/etc/menu01_03_1.gif" alt="æ∆∂˜¿Œ"/></a></li>
-                                    <li><a href="/hr/csr"><img src="/imgs/etc/menu01_03_2.gif" alt="ªÁ»∏∞¯«Â»∞µø"/></a></li>
-                                    <li><a href="/hr/nanum"><img src="/imgs/etc/menu01_03_3.gif" alt="≥™¥Æ¿Ãæﬂ±‚"/></a></li>
+                                    <li><a href="/hr/aramin"><img src="/imgs/etc/menu01_03_1.gif" alt="ÏïÑÎûåÏù∏"/></a></li>
+                                    <li><a href="/hr/csr"><img src="/imgs/etc/menu01_03_2.gif" alt="ÏÇ¨ÌöåÍ≥µÌóåÌôúÎèô"/></a></li>
+                                    <li><a href="/hr/nanum"><img src="/imgs/etc/menu01_03_3.gif" alt="ÎÇòÎàîÏù¥ÏïºÍ∏∞"/></a></li>
                                 </ul>
                             </li>
-                            <li><a href="/hr/family"><img src="/imgs/etc/menu01_04.gif" alt="∞Ëø≠ªÁ"/></a></li>
+                            <li><a href="/hr/family"><img src="/imgs/etc/menu01_04.gif" alt="Í≥ÑÏó¥ÏÇ¨"/></a></li>
                             <li><a href="/hr/contact"><img src="/imgs/etc/menu01_05.gif"alt="Contact"/></a>
                                 <ul>
-                                    <li><a href="/hr/contact"><img src="/imgs/etc/menu01_05_1.gif" alt="ø¨∂Ù√≥"/></a></li>
-                                    <li><a href="/hr/location"><img src="/imgs/etc/menu01_05_2.gif" alt="ø¿Ω√¥¬±Ê"/></a></li>
+                                    <li><a href="/hr/contact"><img src="/imgs/etc/menu01_05_1.gif" alt="Ïó∞ÎùΩÏ≤ò"/></a></li>
+                                    <li><a href="/hr/location"><img src="/imgs/etc/menu01_05_2.gif" alt="Ïò§ÏãúÎäîÍ∏∏"/></a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
-                    {/*º≠∫ÒΩ∫*/}
+                    {/*ÏÑúÎπÑÏä§*/}
                     <div className="menu02">
-                        <h4><a href="/service/jobportal"><img src="/imgs/etc/menu02.gif" alt="º≠∫ÒΩ∫"/></a></h4>
+                        <h4><a href="/service/jobportal"><img src="/imgs/etc/menu02.gif" alt="ÏÑúÎπÑÏä§"/></a></h4>
                         <ul>
-                            <li><a href="/service/jobportal"><img src="/imgs/etc/menu02_01.gif" alt="√Îæ˜∆˜≈ªªÁæ˜"/></a></li>
+                            <li><a href="/service/jobportal"><img src="/imgs/etc/menu02_01.gif" alt="Ï∑®ÏóÖÌè¨ÌÉàÏÇ¨ÏóÖ"/></a></li>
                         </ul>
                     </div>
                     {/*IR*/}
                     <div className="menu03">
                         <h4><a href="/ir/shareholderComposition"><img src="/imgs/etc/menu03.gif" alt="IR"/></a></h4>
                         <ul>
-                            <li><a href="/ir/shareholderComposition"><img src="/imgs/etc/menu03_01.gif" alt="±‚æ˜¡ˆπË±∏¡∂"/></a>
+                            <li><a href="/ir/shareholderComposition"><img src="/imgs/etc/menu03_01.gif" alt="Í∏∞ÏóÖÏßÄÎ∞∞Íµ¨Ï°∞"/></a>
                                 <ul>
-                                    <li><a href="/ir/shareholderComposition"><img src="/imgs/etc/menu03_01_1.gif" alt="¡÷¡÷±∏º∫"/></a></li>
-                                    <li><a href="/ir/directorate"><img src="/imgs/etc/menu03_01_2.gif" alt="¿ÃªÁ»∏ &amp; øÓøµ±‘¡§"/></a></li>
-                                    <li><a href="/ir/articlesAssociation"><img src="/imgs/etc/menu03_01_3.gif" alt="¡§∞¸"/></a></li>
+                                    <li><a href="/ir/shareholderComposition"><img src="/imgs/etc/menu03_01_1.gif" alt="Ï£ºÏ£ºÍµ¨ÏÑ±"/></a></li>
+                                    <li><a href="/ir/directorate"><img src="/imgs/etc/menu03_01_2.gif" alt="Ïù¥ÏÇ¨Ìöå &amp; Ïö¥ÏòÅÍ∑úÏ†ï"/></a></li>
+                                    <li><a href="/ir/articlesAssociation"><img src="/imgs/etc/menu03_01_3.gif" alt="Ï†ïÍ¥Ä"/></a></li>
                                 </ul>
                             </li>
-                            <li><a href="/ir/financialStatements"><img src="/imgs/etc/menu03_02.gif" alt="∞¯Ω√¡§∫∏"/></a></li>
-                            <li><a href="/ir/stockInformation"><img src="/imgs/etc/menu03_03.gif" alt="¡÷∞°¡§∫∏"/></a></li>
-                            <li><a href="/ir/financialStatements2"><img src="/imgs/etc/menu03_04.gif" alt="¿Áπ´¿Á«•"/></a></li>
-                            <li><a href="/ir/earningsRelease"><img src="/imgs/etc/menu03_03_2.png" alt="∞¯∞ÌªÁ«◊"/></a></li>
-                            <li><a href="/ir/disclosureManage"><img src="/imgs/etc/menu03_05_1.png" alt="≥ª∫Œ¡§∫∏∞¸∏Æ±‘¡§"/></a></li>
+                            <li><a href="/ir/financialStatements"><img src="/imgs/etc/menu03_02.gif" alt="Í≥µÏãúÏ†ïÎ≥¥"/></a></li>
+                            <li><a href="/ir/stockInformation"><img src="/imgs/etc/menu03_03.gif" alt="Ï£ºÍ∞ÄÏ†ïÎ≥¥"/></a></li>
+                            <li><a href="/ir/financialStatements2"><img src="/imgs/etc/menu03_04.gif" alt="Ïû¨Î¨¥Ïû¨Ìëú"/></a></li>
+                            <li><a href="/ir/earningsRelease"><img src="/imgs/etc/menu03_03_2.png" alt="Í≥µÍ≥†ÏÇ¨Ìï≠"/></a></li>
+                            <li><a href="/ir/disclosureManage"><img src="/imgs/etc/menu03_05_1.png" alt="ÎÇ¥Î∂ÄÏ†ïÎ≥¥Í¥ÄÎ¶¨Í∑úÏ†ï"/></a></li>
                         </ul>
                     </div>
-                    {/*»´∫∏ºæ≈Õ*/}
+                    {/*ÌôçÎ≥¥ÏÑºÌÑ∞*/}
                     <div className="menu04">
-                        <h4><a href="/pr/saraminNews"><img src="/imgs/etc/menu04.gif" alt="»´∫∏ºæ≈Õ"/></a></h4>
+                        <h4><a href="/pr/saraminNews"><img src="/imgs/etc/menu04.gif" alt="ÌôçÎ≥¥ÏÑºÌÑ∞"/></a></h4>
                         <ul>
-                            <li><a href="/pr/saraminNews"><img src="/imgs/etc/menu04_01.gif" alt="ªÁ∂˜¿Œ News"/></a></li>
-                            <li><a href="/pr/pressRelease"><img src="/imgs/etc/menu04_02.gif" alt="∫∏µµ¿⁄∑·"/></a></li>
-                            <li><a href="/pr/saraminAwards"><img src="/imgs/etc/menu04_03.gif" alt="ºˆªÛ≥ªø™"/></a></li>
-                            <li><a href="/pr/webzine"><img src="/imgs/etc/menu04_04.gif" alt="¿•¡¯"/></a></li>
-                            <li><a href="/pr/ad"><img src="/imgs/etc/menu04_05.gif" alt="±§∞Ì"/></a></li>
+                            <li><a href="/pr/saraminNews"><img src="/imgs/etc/menu04_01.gif" alt="ÏÇ¨ÎûåÏù∏ News"/></a></li>
+                            <li><a href="/pr/pressRelease"><img src="/imgs/etc/menu04_02.gif" alt="Î≥¥ÎèÑÏûêÎ£å"/></a></li>
+                            <li><a href="/pr/saraminAwards"><img src="/imgs/etc/menu04_03.gif" alt="ÏàòÏÉÅÎÇ¥Ïó≠"/></a></li>
+                            <li><a href="/pr/webzine"><img src="/imgs/etc/menu04_04.gif" alt="ÏõπÏßÑ"/></a></li>
+                            <li><a href="/pr/ad"><img src="/imgs/etc/menu04_05.gif" alt="Í¥ëÍ≥†"/></a></li>
                         </ul>
                     </div>
-                    {/*√§øÎ*/}
+                    {/*Ï±ÑÏö©*/}
                     <div className="menu05">
-                        <h4><a href="/recruit/talent"><img src="/imgs/etc/menu05.gif" alt="√§øÎ"/></a></h4>
+                        <h4><a href="/recruit/talent"><img src="/imgs/etc/menu05.gif" alt="Ï±ÑÏö©"/></a></h4>
                         <ul>
-                            <li><a href="/recruit/talent"><img src="/imgs/etc/menu05_01.gif" alt="¿Œ¿ÁªÛ"/></a></li>
-                            <li><a href="/recruit/education"><img src="/imgs/etc/menu05_02.gif" alt="¿ŒªÁ±≥¿∞¡¶µµ"/></a></li>
-                            <li><a href="/recruit/welfare"><img src="/imgs/etc/menu05_03.gif" alt="∫π∏Æ»ƒª˝"/></a></li>
-                            <li><a href="/recruit/process"><img src="/imgs/etc/menu05_04.gif" alt="√§øÎ¿˝¬˜"/></a></li>
-                            <li><a href="/recruit/saraminStory"><img src="/imgs/etc/menu05_06.gif" alt="ªÁ∂˜¿Œ ¿Ãæﬂ±‚"/></a></li>
+                            <li><a href="/recruit/talent"><img src="/imgs/etc/menu05_01.gif" alt="Ïù∏Ïû¨ÏÉÅ"/></a></li>
+                            <li><a href="/recruit/education"><img src="/imgs/etc/menu05_02.gif" alt="Ïù∏ÏÇ¨ÍµêÏú°Ï†úÎèÑ"/></a></li>
+                            <li><a href="/recruit/welfare"><img src="/imgs/etc/menu05_03.gif" alt="Î≥µÎ¶¨ÌõÑÏÉù"/></a></li>
+                            <li><a href="/recruit/process"><img src="/imgs/etc/menu05_04.gif" alt="Ï±ÑÏö©Ï†àÏ∞®"/></a></li>
+                            <li><a href="/recruit/saraminStory"><img src="/imgs/etc/menu05_06.gif" alt="ÏÇ¨ÎûåÏù∏ Ïù¥ÏïºÍ∏∞"/></a></li>
                         </ul>
                     </div>
                 </div>
