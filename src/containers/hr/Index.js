@@ -34,24 +34,18 @@ class Hr extends React.Component {
         "sub_hr_location" : Location
     };
 
-    subMenu = (data, depth) => {
-
-        return data.map((menuData, idx) => {
-            if (data.sub == undefined) {
-                /*return (
-                        <Route key={idx} path={menuData.uri} 
-                                render={(...props) => React.createElement(components[ menuData.id ], {menu: menuData}, null)} />
-                    )*/
-            } else {
-               data.sub.map((subMenuData, idx) => {
-                                return (
-                                    <Route key={idx} path={subMenuData.uri} 
-                                            render={(...props) => React.createElement(components[ menuData.id ], {menu: lo_kr.menu[ idx ]}, null)} />
-                                    );
-                            }) 
-            }
+    subMenu = (data) => {
+        return data.map((subMenuData, idx) => {
+                if (subMenuData.sub == undefined){
+                    return (
+                        <Route key={idx} path={subMenuData.uri}
+                                render={(...props) => React.createElement(this.components[ subMenuData.id ], {menu: subMenuData}, null)} />
+                    )
+                } else {
+                    return this.subMenu(subMenuData.sub)
+                }
         })
-    }
+    };
 
 
     render(){
@@ -62,25 +56,15 @@ class Hr extends React.Component {
                     <SubVisual subMenu={this.props.menu.name} />
 
                     <div id="wrap_contents">
+                        <SubLocation />
                         <Lnb lnbData={this.props.menu} />
 
                         <div id="contents">
-                            <SubLocation />
+                            
                             <ContentsTitle titleData={this.props.menu} />
-
-                            {/*<Route exact path='/hr/companyInfo' component={CompanyInfo} hrData={this.props.hrMenu} />*/}
-                            <Route exact path='/hr/companyInfo' component={CompanyInfo} />
-                            <Route exact path='/hr/companyHistory' component={CompanyHistory} />
-                            <Route exact path='/hr/visionMission' component={VisionMission} />
-                            <Route exact path='/hr/ci' component={Ci} />
-                            <Route exact path='/hr/ceo' component={Ceo} />
-                            <Route exact path='/hr/aramin' component={Aramin} />
-                            <Route exact path='/hr/csr' component={Csr} />
-                            <Route exact path='/hr/nanum' component={Nanum} />
-                            <Route exact path='/hr/family' component={Family} />
-                            <Route exact path='/hr/contact' component={Contact} />
-                            <Route exact path='/hr/location' component={Location} />
-
+                            {
+                                this.subMenu(this.props.menu.sub, 2)
+                            }
                         </div>
                     </div>
                 </div>

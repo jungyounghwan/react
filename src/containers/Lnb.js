@@ -10,7 +10,7 @@ class Lnb extends React.Component {
 
         const sm = data.sub.map((subMenu, idx) => { 
             return (
-                    <li key={idx}><NavLink activeClassName="active" exact to={subMenu.uri}>{subMenu.name}</NavLink>{this.subMenu(subMenu, depth+1)}</li>
+                    <li key={idx}><NavLink activeClassName="active" exact={true} to={subMenu.uri}>{subMenu.name}</NavLink>{this.subMenu(subMenu, depth+1)}</li>
             )
         })
 

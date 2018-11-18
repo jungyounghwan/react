@@ -47,17 +47,17 @@
   				"uri" : "/hr/aramin",
   				"sub" : [
   					{
-  						"id" : "hr_aramin",
+  						"id" : "sub_hr_aramin",
   						"name" : "아람인",
   						"uri" : "/hr/aramin"
   					},
   					{
-  						"id" : "hr_csr",
+  						"id" : "sub_hr_csr",
   						"name" : "사회공헌활동",
   						"uri" : "/hr/csr"
   					},
   					{
-  						"id" : "hr_nanum",
+  						"id" : "sub_hr_nanum",
   						"name" : "나눔이야기기",
   						"uri" : "/hr/nanum"
   					}
@@ -74,12 +74,12 @@
   				"uri" : "/hr/contact",
   				"sub" : [
   					{
-  						"id" : "hr_contact",
+  						"id" : "sub_hr_contact",
   						"name" : "연락처",
   						"uri" : "/hr/contact"
   					},
   					{
-  						"id" : "hr_location",
+  						"id" : "sub_hr_location",
   						"name" : "오시는길",
   						"uri" : "/hr/location"
   					}
@@ -93,7 +93,7 @@
     	"uri" : "/service/jobportal",
     	"sub" : [
     		{
-    			"id" : "service_jobportal",
+    			"id" : "sub_service_jobportal",
     			"name" : "취업포털사업",
     			"uri" : "/service/jobportal"
     		}
@@ -218,6 +218,11 @@
     	]
     }
   ],
+  "sitemap" : {
+    "id" : "etc",
+    "name" : "사이트맵",
+    "uri" : "/etc/sitemap" 
+  },
   "common" : {
 
   }

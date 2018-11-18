@@ -9,6 +9,10 @@ app.use(express.static(staticPath));
 
 app.set('port', 8888);
 
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname+'/index.html'));
+});
+
 var server = app.listen(app.get('port'), function() {
     console.log('listening port ', app.get('port'));
 

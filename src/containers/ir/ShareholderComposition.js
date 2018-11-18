@@ -25,10 +25,10 @@ class ShareholderComposition extends React.Component {
                         </colgroup>
                         <thead>
                         <tr>
-                            <th rowspan="2" scope="col">성명(법인명)</th>
-                            <th colspan="2" >보통주</th>
-                            <th colspan="2" >우선주</th>
-                            <th colspan="2" scope="col">Total</th>
+                            <th rowSpan="2" scope="col">성명(법인명)</th>
+                            <th colSpan="2" >보통주</th>
+                            <th colSpan="2" >우선주</th>
+                            <th colSpan="2" scope="col">Total</th>
                         </tr>
                         <tr>
                             <td scope="col">주식주</td>

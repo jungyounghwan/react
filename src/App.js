@@ -35,22 +35,15 @@ class App extends React.Component {
                     <Header menus={lo_kr.menu} />
 
                     <Route exact path="/" component={Main} />
-                    {/*{
+                    {
                         lo_kr.menu.map((menuData, idx) => {
                             return (
                                 <Route key={idx} path={'/'+ menuData.id +'/**'} 
-                                        render={(...props) => React.createElement(components[ menuData.id ], {menu: lo_kr.menu[ idx ]}, null)} />
+                                        render={(...props) => React.createElement(components[ menuData.id ], {menu: menuData}, null)} />
                                 );
                         })
-                    }*/}
-
-                    <Route path='/hr/**' component={Hr} />
-                    <Route path='/service/**' component={Service} />
-                    <Route path='/ir/**' component={Ir} />
-                    <Route path='/pr/**' component={Pr} />
-                    <Route path='/recruit/**' component={Recruit} />
-                    <Route path='/etc/**' component={Etc} />
-
+                    }
+                    <Route exact path={'/etc/sitemap'} render={(...props) => React.createElement(Etc, {menu: lo_kr.sitemap}, null)} />
                     {/* test page */}
                     <Route path='/components/index' component={ComponentIndex} />
 

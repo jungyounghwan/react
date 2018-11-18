@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Match } from 'react-router-dom';
 
 import HamburgerMenu from './hamburgerMenu';
 
@@ -16,7 +16,7 @@ class Header extends React.Component {
                 <ul className="nav">
                     {this.props.menus.map((menuData, idx) => {
                         return (
-                                <li key={idx}><NavLink activeClassName="active" exact to={menuData.uri}>{menuData.name}</NavLink></li>
+                                <li key={idx}><NavLink activeClassName="active" className={menuData.uri.indexOf(pathname[1]) > -1 ? 'active' : ''} to={menuData.uri}>{menuData.name}</NavLink></li>
                             );
                     })}
                 </ul>
