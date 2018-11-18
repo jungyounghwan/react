@@ -8,12 +8,13 @@
 
 /* component */
 @import "component/subVisual";
-@import "component/location";
+@import "component/sublocation";
 @import "component/tab";
 @import "component/contentsTitle";
 
 /* layout */
 @import "layout/header";
+@import "layout/hamburgerMenu";
 @import "layout/container";
 @import "layout/lnb";
 @import "layout/footer";
@@ -21,3 +22,7 @@
 /* page */
 @import "pages/main";
 @import "pages/hr";
+
+/* old css */
+@import "old/content";
+@import "old/board";

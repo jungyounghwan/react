@@ -68,6 +68,7 @@ class Hr extends React.Component {
                             <SubLocation />
                             <ContentsTitle titleData={this.props.menu} />
 
+                            {/*<Route exact path='/hr/companyInfo' component={CompanyInfo} hrData={this.props.hrMenu} />*/}
                             <Route exact path='/hr/companyInfo' component={CompanyInfo} />
                             <Route exact path='/hr/companyHistory' component={CompanyHistory} />
                             <Route exact path='/hr/visionMission' component={VisionMission} />

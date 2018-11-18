@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Lnb extends React.Component {
 
@@ -26,7 +26,7 @@ class Lnb extends React.Component {
                     </li>
                 </ul>
                 <div className="lnb_banner">
-                    <p>배너여역</p>
+                    <a href="http://saraminhr.co.kr/10th/" target="_blank" title="새창"><img src="http://saraminhr.co.kr/imgs/pr/bnr_sub10th2.png" alt="사람인HR 창립10주년 기념행사" /></a>
                 </div>
             </div>
         );

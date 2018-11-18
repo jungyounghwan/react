@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 #header {
   position: relative;
   top: 0;
@@ -55,18 +57,18 @@
 @media screen and (max-width:$sizeMobile) {
   #header {
     @include size(100%, auto);
-    z-index: 100;
+    z-index: 110;
     text-align:center;
+    .nav {
+      display:none;
+    }
+    .util_option li a {
+      display:none;
+    }
     .bi {
       position: relative;
       top: 0;
       padding: 10px 0;
-    }
-    &.main .nav {
-      display:none;
-    }
-    &.main .util_option li a {
-      display:none;
     }
   }
 }

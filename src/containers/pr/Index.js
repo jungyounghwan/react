@@ -28,8 +28,6 @@ class Ir extends React.Component {
                         <div id="contents">
                             <ContentsTitle titleData={this.props.menu} />
 
-                            <p>{location.pathname}</p>
-
                             <Route exact path='/pr/saraminNews' component={SaraminNews} />
                             <Route exact path='/pr/PressRelease' component={PressRelease} />
                             <Route exact path='/pr/SaraminAwards' component={SaraminAwards} />

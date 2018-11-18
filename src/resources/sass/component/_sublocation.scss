@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.sub_location {
+  height:40px;
+  background:#fff;
+  text-align:right;
+  p {
+    font-size:11px;
+    line-height:40px;
+  }
+}
+
+@media screen and (max-width:$sizeMobile) {
+  .sub_location {
+    display: none;
+  }
+}

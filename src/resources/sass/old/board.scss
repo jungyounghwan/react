@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* table definition */
+caption span { position:absolute; overflow:hidden;  height:0; width:0; font-size:0; visibility:hidden;}
+/* ===================  컨텐츠 기본 리스트 ======================== */
+table.content_list { width:100%; border-collapse: collapse;}
+table.content_list col.cate { width:12%;}
+table.content_list col.info { width:18%;}
+table.content_list col.name { width:25%;}
+table.content_list col.ju_num { width:15%;}
+table.content_list col.ji_num { width:10%;}
+table.content_list thead th { border: 1px #e1e1e1 solid; background-color:#f4f4f4; padding:8px 0 3px 0; font-size:90%;}
+table.content_list thead td { font-weight:normal ;border: 1px #e1e1e1 solid; text-align:center; background-color:#f4f4f4; padding:8px 0 3px 0; font-size:90%;}
+table.content_list tbody td { padding:13px 3px 9px 10px; border: 1px #e1e1e1 solid; text-align:left; color:#666; letter-spacing:-0.1em; }
+table.content_list tbody td ul { vertical-align:top;}
+table.content_list tbody td.first { border-left:none; text-align:center;}
+table.content_list tbody td.last { border-right:none;}
+
+/* ===================  일반게시판 리스트 ======================== */
+table.basic_list { width:100%; border-collapse: collapse; border-top: 1px #e1e1e1 solid; margin-bottom:10px; }
+table.basic_list col.num { width:10%;}
+table.basic_list col.subject { width:75%;}
+table.basic_list col.date { width:15%;}
+table.basic_list col.cate { width:10%;}
+table.basic_list col.recruit { width:50%;}
+table.basic_list thead th { border-bottom: 1px #e1e1e1 solid; background-color:#f4f4f4; padding:8px 0 3px 0; font-size:90%;}
+table.basic_list thead th.first { border-left: 1px #e1e1e1 solid;}
+table.basic_list thead th.last { border-right: 1px #e1e1e1 solid;}
+table.basic_list tbody td { padding:10px 0 7px 0; border-bottom: 1px #e1e1e1 solid; text-align:center; color:#666; font-size:90%;}
+table.basic_list tbody td.subject  { padding-left:15px; text-align:left; font-size:100%;}
+table.basic_list tbody td.subject_view  { padding:15px 15px 40px 15px; text-align: justify; font-size:100%;}
+table.basic_list tbody th { border-bottom: 1px #e1e1e1 solid; padding:10px 0 7px 0; font-size:90%;}
+
+/* ===================  일반게시판 리스트 ======================== */
+table.basic_view { width:100%; border-collapse: collapse; border-top: 1px #e1e1e1 solid; margin-bottom:10px; }
+table.basic_view col.num { width:10%;}
+table.basic_view col.subject { width:65%;}
+table.basic_view col.date { width:25%;}
+table.basic_view col.cate { width:10%;}
+table.basic_view .recruit { width:50%;}
+table.basic_view thead th { border-bottom: 1px #e1e1e1 solid; padding:8px 0 5px 10px; font-size:120%; text-align:left; color:#000;}
+table.basic_view thead td { padding:8px 0 3px 0px; font-size:90%; text-align:center; font-weight:normal;}
+table.basic_view thead td.t_l { padding-left:10px; text-align:left;}
+table.basic_view tbody td { padding:10px 0 7px 0; border-bottom: 1px #e1e1e1 solid; text-align:center; color:#666; font-size:90%;}
+table.basic_view tbody td.subject_view  { padding:40px 15px 40px 15px; text-align: justify; font-size:100%;}
+table.basic_view tbody td.subject  { padding-left:15px; text-align:left; font-size:100%;}
+table.basic_view tbody th { border-bottom: 1px #e1e1e1 solid; padding:10px 0 7px 0; font-size:90%;}
+
+
+/* ===================  연혁 리스트 ======================== */
+table.basic_history { width:100%; border-collapse: collapse; margin-bottom:10px; }
+table.basic_history col.year { width:10%;}
+table.basic_history col.month { width:10%;}
+table.basic_history col.subject { width:80%;}
+table.basic_history thead th,
+table.basic_history tbody td .now { position:absolute; overflow:hidden;  height:0; width:0; font-size:0; visibility:hidden;}
+table.basic_history tbody td li {}
+table.basic_history tbody td { padding:14px; padding-left: 10px; border-top: 1px #e1e1e1 solid; text-align:left; color:#666;vertical-align:top;}
+table.basic_history tbody td.first { border-top: 1px solid #e1e1e1;}
+table.basic_history tbody td.last { border-bottom: 1px solid #e1e1e1;}
+table.basic_history tbody td.no_line  { border-top: 0px; padding-bottom:0px;}
+table.basic_history tbody td.no_line1 { border-bottom: 0px;  padding-bottom:0; padding-top: 12px;}
+table.basic_history tbody td.no_line2 { border-bottom: 0px;  padding-bottom:0; padding-top: 0; }
+table.basic_history tbody td.no_line3 { padding-top:0; padding-bottom: 12px; }
+table.basic_history tbody td.no_line4 { border-bottom: 0px; padding:14px; padding-left: 10px; }
+table.basic_history tbody td.no_line5 { border-bottom: 0px; padding-top:0; padding-bottom: 12px; }
+table.basic_history tbody td.no_line6 { padding-top:12px; padding-bottom: 7px; }
+
+/* ===================  수상내역 ======================== */
+table.basic_history2 { width:100%; border-collapse: collapse; margin-bottom:10px; }
+table.basic_history2 col.year { width:10%;}
+table.basic_history2 col.month { width:10%;}
+table.basic_history2 col.subject { width:80%;}
+table.basic_history2 thead th,
+table.basic_history2 tbody td .now { position:absolute; overflow:hidden;  height:0; width:0; font-size:0; visibility:hidden;}
+table.basic_history2 tbody td li {}
+table.basic_history2 tbody td { padding:14px; padding-left: 10px; border-bottom: 1px #e1e1e1 solid; text-align:left; color:#666;vertical-align:top;}
+table.basic_history2 tbody td.no_line  { border-bottom: 0px; padding-bottom:0px;}
+table.basic_history2 tbody td.no_line1 { border-bottom: 0px;  padding-bottom:0; padding-top: 12px;}
+table.basic_history2 tbody td.no_line2 { border-bottom: 0px;  padding-bottom:0; padding-top: 0; }
+table.basic_history2 tbody td.no_line3 { padding-top:0; padding-bottom: 12px; }
+table.basic_history2 tbody td.no_line4 { border-bottom: 0px; padding:14px; padding-left: 10px; }
+table.basic_history2 tbody td.no_line5 { border-bottom: 0px; padding-top:0; padding-bottom: 12px; }
+table.basic_history2 tbody td.no_line6 { padding-top:12px; padding-bottom: 7px; }
+
+/* ===================  포토게시판 리스트 ======================== */
+table.basic_photo { width:100%; border-spacing:5px; border-collapse: collapse; margin-bottom:10px; }
+table.basic_photo col.photo { width:25%; }
+table.basic_photo tbody td { vertical-align:top; padding:0px; text-align:left; line-height:130%; color:#888; font-size:90%; }
+table.basic_photo tbody td .tit { font-weight:bold; color:#000; display:block; }
+
+
+/* ===================  글쓰기 게시판 리스트 ======================== */
+table.basic_write { width:100%; border-collapse: collapse; border-top: 1px #e1e1e1 solid; margin-bottom:40px; }
+table.basic_write col.cate { width:10%;}
+table.basic_write col.subject { width:90%;}
+table.basic_write tbody th { border-bottom: 1px #e1e1e1 solid; padding:8px 0 9px 4px; font-size:90%; text-align:left;}
+table.basic_write tbody td { padding:8px 0 9px 0; border-bottom: 1px #e1e1e1 solid; text-align:left; color:#666; font-size:90%;}
+table.basic_write tbody td.subject  { text-align:left; font-size:100%;}
+table.basic_write tbody td.subject label { position:absolute; overflow:hidden;  height:0; width:0; font-size:0; visibility:hidden;}
+table.basic_write tbody td.subject textarea { border: 1px #e1e1e1 solid;}
+table.basic_write tbody td input { background-color:#f4f4f4; border: 1px #e1e1e1 solid;}
+
+
+/* ===================  게시판 페이징 ===================  */
+.list_paging { height:22px; text-align:center; margin-bottom:10px; letter-spacing:0.1em;  }
+.list_paging span { font-weight:normal; margin:0 1px 0 1px;}
+.list_paging span.select { font-weight:bold; color:#3557af;}
+.list_paging .first, .list_paging .end, .list_paging .pre, .list_paging .next { color:#000;}
+.list_paging .pre { padding-right: 0.1em; padding-left:0.1em; }
+.list_paging .next { padding-left: 0.1em; padding-right:0.1em; }
+.list_paging .first img, .list_paging .end img, .list_paging .pre img, .list_paging .next img { vertical-align: middle; }
+
+
+/* ===================  게시판 하단 검색 ===================  */
+.board_search {text-align:center; }
+.board_search label {position:absolute; overflow:hidden;  height:0; width:0; font-size:0; visibility:hidden;}
+.board_search select { /*width:75px; border:1px #cecece solid;*/ text-align:center; }
+.board_search #input_search { width:170px;  border:1px #cecece solid; background-color:#f3f3f3; }
+.board_search input.img_btn { padding:0;}
+
+/* ===================  게시판 버튼 ===================  */
+.btn_action { text-align:right; margin-bottom:25px;}
+.btn_action span { margin-left:3px;}
+.btn_action2 { text-align:center; margin-bottom:25px;}
+.btn_action2 span { margin-left:3px;}
+
+div.btn_ApplyForEnterance { margin:10px 0 20px 0; text-align:center; }

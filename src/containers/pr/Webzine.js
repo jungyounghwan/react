@@ -4,7 +4,7 @@ class Webzine extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className="webzine">
 
             </div>
         )

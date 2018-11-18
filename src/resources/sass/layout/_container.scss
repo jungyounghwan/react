@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 #container {
   position: relative;
   z-index: 50
@@ -9,10 +11,25 @@
   #lnb {
     float:left;
     width:185px;
+    padding-left:13px;
   }
   #contents {
     float:left;
-    width:765px;
-    padding-left:30px;
+    width:740px;
+    padding-left:33px;
+  }
+}
+
+@media screen and (max-width:$sizeMobile) {
+  #container #wrap_contents {
+    width:100%;
+    #contents {
+      width:100%;
+      overflow-x: auto;
+      padding:0;
+      img {
+        width:auto;
+      }
+    }
   }
 }

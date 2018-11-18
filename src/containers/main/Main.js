@@ -1,5 +1,4 @@
 import React from 'react';
-import Lnb from '../Lnb';
 
 class Main extends React.Component {
     state = {count: 1};

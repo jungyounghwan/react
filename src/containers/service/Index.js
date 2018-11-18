@@ -24,8 +24,6 @@ class Ir extends React.Component {
                         <div id="contents">
                             <ContentsTitle titleData={this.props.menu} />
 
-                            <p>{location.pathname}</p>
-
                             <Route exact path='/service/jobportal' component={Jobportal} />
 
                         </div>

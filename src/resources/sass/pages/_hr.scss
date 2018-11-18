@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* 회사개요 */
-.hr_companyinfo {
+.company_info {
   position:relative;
   min-height:670px;
-  @include bgImg("/src/resources/images/hr/img_companyinfo02.png", no-repeat, 520px, bottom);
+  /*@include bgImg("/src/resources/images/hr/img_companyinfo02.png", no-repeat, 520px, bottom);*/
   dl {
     position:absolute;
     dt {
@@ -38,7 +38,7 @@
 }
 
 /* 회사연혁*/
-.hr_companyhistory {
+.company_history {
   .area_tab {
     .tab_cont {
       @include bgImg("/src/resources/images/hr/img_companyhistory01.png", no-repeat, 0, 0);
@@ -89,9 +89,9 @@
 }
 
 /* CEO인사말 */
-.hr_ceo {
-  min-height:600px;
-  @include bgImg("/src/resources/images/hr/img_ceo.png", no-repeat, right, bottom);
+.ceo {
+  /*min-height:600px;
+  @include bgImg("/src/resources/images/hr/img_ceo.png", no-repeat, right, bottom);*/
   .ceo_tit {
     font-size:40px;
     color:#a8b6c0;
@@ -114,7 +114,7 @@
 }
 
 /* 사회공헌 - 아람인 */
-.hr_aramin {
+.aramin {
   .text_type1 {
     padding:20px 0;
     font-size:18px;

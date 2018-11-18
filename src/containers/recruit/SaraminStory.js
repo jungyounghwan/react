@@ -4,7 +4,7 @@ class SaraminStory extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className="saramin_story">
 
             </div>
         )
