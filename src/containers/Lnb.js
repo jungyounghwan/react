@@ -7,10 +7,10 @@ class Lnb extends React.Component {
         if (data.sub == undefined) {
             return;
         }
-console.log("submenu", data, depth);
+
         const sm = data.sub.map((subMenu, idx) => { 
             return (
-                    <li key={idx}><NavLink activeClassName="active" exact to={subMenu.uri}>{subMenu.name}</NavLink>{this.subMenu(subMenu, 3)}</li>
+                    <li key={idx}><NavLink activeClassName="active" exact to={subMenu.uri}>{subMenu.name}</NavLink>{this.subMenu(subMenu, depth+1)}</li>
             )
         })
 
@@ -21,8 +21,8 @@ console.log("submenu", data, depth);
         return (
             <div id="lnb">
                 <ul className="nav">
-                    <li><NavLink activeClassName="active" exact to={this.props.hrData.uri}>{this.props.hrData.name}</NavLink>
-                        {this.subMenu(this.props.hrData, 2)}
+                    <li><NavLink activeClassName="active" exact to={this.props.lnbData.uri}>{this.props.lnbData.name}</NavLink>
+                        {this.subMenu(this.props.lnbData, 2)}
                     </li>
                 </ul>
                 <div className="lnb_banner">

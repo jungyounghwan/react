@@ -7,7 +7,7 @@ class SubVisual extends React.Component {
         return (
             <div className="sub_visual">
                 <div className="inner">
-                    <p>2depth Menu name</p>
+                    <p>{this.props.subMenu}</p>
                 </div>
             </div>
         );

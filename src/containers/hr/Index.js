@@ -20,21 +20,53 @@ import Location from './Location';
 
 class Hr extends React.Component {
 
+    components = {
+        "sub_hr_companyInfo" : CompanyInfo,
+        "sub_hr_companyHistory" : CompanyHistory,
+        "sub_hr_visionMission" : VisionMission,
+        "sub_hr_ci" : Ci,
+        "hr_ceo" : Ceo,
+        "sub_hr_aramin" : Aramin,
+        "sub_hr_csr" : Csr,
+        "sub_hr_nanum" : Nanum,
+        "hr_family" : Family,
+        "sub_hr_contact" : Contact,
+        "sub_hr_location" : Location
+    };
+
+    subMenu = (data, depth) => {
+
+        return data.map((menuData, idx) => {
+            if (data.sub == undefined) {
+                /*return (
+                        <Route key={idx} path={menuData.uri} 
+                                render={(...props) => React.createElement(components[ menuData.id ], {menu: menuData}, null)} />
+                    )*/
+            } else {
+               data.sub.map((subMenuData, idx) => {
+                                return (
+                                    <Route key={idx} path={subMenuData.uri} 
+                                            render={(...props) => React.createElement(components[ menuData.id ], {menu: lo_kr.menu[ idx ]}, null)} />
+                                    );
+                            }) 
+            }
+        })
+    }
+
+
     render(){
 
         return (
             <Router>
                 <div id="container">
-                    <SubVisual />
+                    <SubVisual subMenu={this.props.menu.name} />
 
                     <div id="wrap_contents">
-                        <SubLocation />
-
-                        <Lnb hrData={this.props.hrMenu} />
+                        <Lnb lnbData={this.props.menu} />
 
                         <div id="contents">
-                            <ContentsTitle hrData={this.props.hrMenu} />
-
+                            <SubLocation />
+                            <ContentsTitle titleData={this.props.menu} />
 
                             <Route exact path='/hr/companyInfo' component={CompanyInfo} />
                             <Route exact path='/hr/companyHistory' component={CompanyHistory} />

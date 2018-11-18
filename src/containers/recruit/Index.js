@@ -18,15 +18,15 @@ class Ir extends React.Component {
         return (
             <Router>
                 <div id="container">
-                    <SubVisual />
+                    <SubVisual subMenu={this.props.menu.name} />
 
                     <div id="wrap_contents">
                         <SubLocation />
 
-                        <Lnb />
+                        <Lnb lnbData={this.props.menu} />
 
                         <div id="contents">
-                            <ContentsTitle />
+                            <ContentsTitle titleData={this.props.menu} />
 
                             <p>{location.pathname}</p>
 
