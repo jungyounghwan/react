@@ -18,6 +18,15 @@ import './resources/sass/app.scss';
 import lo_kr from './locale/locale_kr.json';
 
 class App extends React.Component {
+    /*모바일 대응 component 분리 작업*/
+    mobileDevice = () => {
+        const UserAgent = navigator.userAgent;
+        if( UserAgent.match(/iPhone|iPod|iPad|iPad2|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null || window.offsetWidth <= 970) {
+            return true
+        }else {
+            return false
+        }
+    }
     render(){
         const components = {
             "hr" : Hr,
