@@ -1,0 +1,161 @@
+{
+
+  "main" : {
+  	
+  },
+  "menu" : [
+  	{
+  		"id" : "hr",
+  		"name" : "SARAMIN HR",
+  		"uri" : "/hr/companyInfo",
+  		"sub" : [
+  			{
+  				"id" : "hr_companyInfo",
+  				"name" : "Company Introduction",
+  				"uri" : "/hr/companyInfo",
+  				"sub" : [
+  					{
+  						"id" : "sub_hr_companyInfo",
+  						"name" : "Company Overview",
+  						"uri" : "/hr/companyInfo"
+  					},
+  					{
+  						"id" : "sub_hr_companyHistory",
+  						"name" : "Company History",
+  						"uri" : "/hr/companyHistory"
+  					},
+  					{
+  						"id" : "sub_hr_visionMission",
+  						"name" : "Vision & Mission",
+  						"uri" : "/hr/visionMission"
+  					},
+  					{
+  						"id" : "sub_hr_ci",
+  						"name" : "CI Introduction",
+  						"uri" : "/hr/ci"
+  					}
+  				]
+  			},
+  			{
+  				"id" : "hr_ceo",
+  				"name" : "CEO Message",
+  				"uri" : "/hr/ceo"
+  			},
+  			{
+  				"id" : "hr_aramin",
+  				"name" : "Social Contribution",
+  				"uri" : "/hr/aramin",
+  				"sub" : [
+  					{
+  						"id" : "sub_hr_aramin",
+  						"name" : "Aramin",
+  						"uri" : "/hr/aramin"
+  					},
+  					{
+  						"id" : "sub_hr_csr",
+  						"name" : "Social Contribution Activities",
+  						"uri" : "/hr/csr"
+  					},
+  					{
+  						"id" : "sub_hr_nanum",
+  						"name" : "Sharing Stories",
+  						"uri" : "/hr/nanum"
+  					}
+  				]
+  			},
+  			{
+  				"id" : "hr_family",
+  				"name" : "Subsidiaries",
+  				"uri" : "/hr/family"
+  			},
+  			{
+  				"id" : "hr_contact",
+  				"name" : "Contact",
+  				"uri" : "/hr/location"
+  			}
+  		]
+    },
+    {
+    	"id" : "service",
+    	"name" : "SERVICE",
+    	"uri" : "/service/jobportal",
+    	"sub" : [
+    		{
+    			"id" : "sub_service_jobportal",
+    			"name" : "Job Portal Business",
+    			"uri" : "/service/jobportal"
+    		}
+    	]
+    },
+    {
+    	"id" : "ir",
+    	"name" : "IR",
+    	"uri" : "/ir/shareholderComposition",
+    	"sub" : [
+    		{
+    			"id" : "ir_shareholderComposition",
+    			"name" : "Governance",
+    			"uri" : "/ir/shareholderComposition",
+    			"sub" : [
+    				{
+    					"id" : "sub_ir_shareholderComposition",
+		    			"name" : "Shareholder Composition",
+		    			"uri" : "/ir/shareholderComposition"
+		    		},
+		    		{
+		    			"id" : "sub_ir_directorate",
+		    			"name" : "Board of Directors",
+		    			"uri" : "/ir/directorate"
+		    		}
+    			]
+    		},
+    		{
+    			"id" : "ir_financialStatements",
+    			"name" : "Fair Disclosure",
+    			"uri" : "/ir/financialStatements"
+    		},
+    		{
+    			"id" : "ir_stockInformation",
+    			"name" : "Stock Information",
+    			"uri" : "/ir/stockInformation"
+    		},
+    		{
+    			"id" : "ir_financialStatements2",
+    			"name" : "Financial Statement",
+    			"uri" : "/ir/financialStatements2"
+    		}
+    	]
+    },
+    {
+    	"id" : "pr",
+    	"name" : "PR",
+    	"uri" : "/pr/saraminNews",
+    	"sub" : [
+    		{
+    			"id" : "pr_saraminNews",
+    			"name" : "Saramin News",
+    			"uri" : "/pr/saraminNews"
+    		},
+    		{
+    			"id" : "pr_saraminAwards",
+    			"name" : "Award Details",
+    			"uri" : "/pr/saraminAwards"
+    		},
+    		{
+    			"id" : "pr_ad",
+    			"name" : "Advertisement",
+    			"uri" : "/pr/ad"
+    		}
+    	]
+    }
+  ],
+  "sitemap" : {
+    "id" : "etc",
+    "name" : "SITEMAP",
+    "uri" : "/etc/sitemap" 
+  },
+  "common" : {
+
+  }
+
+}

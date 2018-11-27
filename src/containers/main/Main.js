@@ -57,45 +57,49 @@ class Main extends React.Component {
     }
 
     render() {
+        console.log(this.props.mainData);
+
+        const mainContent = this.props.mainData.contents;
+
         return (
             <div id="container" className="main">
                 <div className="area_slide">
                     <ul className="slide_list">
                         <li className="slide bg_slide01">
-                            <span className="slide_name" style={{display:'block'}}>꿈</span>
+                            <span className="slide_name" style={{display:'block'}}>{mainContent.slide_title_001}</span>
                             <dl>
                                 <dt>
                                     <span>01</span>
                                     <strong>Dream</strong>
                                 </dt>
                                 <dd>
-                                    <p className="kor_text">당신의 꿈이 별처럼 빛날 때까지 함께하겠습니다.</p>
+                                    <p className="kor_text">{mainContent.slide_content_001}</p>
                                     <p className="eng_text">We will be with you until your dream twinkles like a star.</p>
                                 </dd>
                             </dl>
                         </li>
                         <li className="slide bg_slide02">
-                            <span className="slide_name">도전</span>
+                            <span className="slide_name">{mainContent.slide_title_002}</span>
                             <dl>
                                 <dt>
                                     <span>02</span>
                                     <strong>Challenge</strong>
                                 </dt>
                                 <dd>
-                                    <p className="kor_text">젊음은 끝까지 도전하는 것입니다.</p>
+                                    <p className="kor_text">{mainContent.slide_content_002}</p>
                                     <p className="eng_text">Youth means relentless challenge.</p>
                                 </dd>
                             </dl>
                         </li>
                         <li className="slide bg_slide03">
-                            <span className="slide_name">웃음</span>
+                            <span className="slide_name">{mainContent.slide_title_003}</span>
                             <dl>
                                 <dt>
                                     <span>03</span>
                                     <strong>Smile</strong>
                                 </dt>
                                 <dd>
-                                    <p className="kor_text">당신에게 행복한 미소를 전하겠습니다.</p>
+                                    <p className="kor_text">{mainContent.slide_content_003}</p>
                                     <p className="eng_text">We will give you a happy smile.</p>
                                 </dd>
                             </dl>
@@ -111,22 +115,22 @@ class Main extends React.Component {
                     <ul className="box_link">
                         <li className="bg_link01">
                             <a href="#">
-                                <strong>사람인이야기</strong>
-                                <p>사람인이 들려주는 다양하고<br />재미난 이야기를 만나실 수<br /> 있습니다.</p>
+                                <strong>{mainContent.box_title_001}</strong>
+                                <p>{mainContent.box_content_001}</p>
                                 <span>GO</span>
                             </a>
                         </li>
                         <li className="bg_link02">
                             <a href="#">
-                                <strong>나눔이야기</strong>
-                                <p>사람인은 아람인 캠페인을<br />통해 이웃사랑을 실천해<br />나가고 있습니다.</p>
+                                <strong>{mainContent.box_title_002}</strong>
+                                <p>{mainContent.box_content_002}</p>
                                 <span>GO</span>
                             </a>
                         </li>
                         <li className="bg_link03">
                             <a href="#">
-                                <strong>인재채용</strong>
-                                <p>사람을 중시하는 따뜻한<br />기업 사람인의 일원이<br />되세요.</p>
+                                <strong>{mainContent.box_title_003}</strong>
+                                <p>{mainContent.box_content_003}</p>
                                 <span>GO</span>
                             </a>
                         </li>
