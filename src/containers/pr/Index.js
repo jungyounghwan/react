@@ -2,9 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import SubVisual from '../../components/SubVisual';
-import SubLocation from '../../components/SubLocation';
 import Lnb from '../Lnb';
-import ContentsTitle from '../../components/ContentsTitle';
 
 import SaraminNews from './SaraminNews';
 import PressRelease from './PressRelease';
@@ -13,6 +11,26 @@ import Webzine from './Webzine';
 import Ad from './Ad';
 
 class Ir extends React.Component {
+    components = {
+        "pr_saraminNews" : SaraminNews,
+        "pr_pressRelease" : PressRelease,
+        "pr_saraminAwards" : SaraminAwards,
+        "pr_webzine" : Webzine,
+        "pr_ad" : Ad
+    };
+
+    subMenu = (data) => {
+        return data.map((subMenuData, idx) => {
+            if (subMenuData.sub == undefined){
+                return (
+                    <Route key={idx} path={subMenuData.uri}
+                           render={(...props) => React.createElement(this.components[ subMenuData.id ], {menu: subMenuData}, null)} />
+                )
+            } else {
+                return this.subMenu(subMenuData.sub)
+            }
+        })
+    };
 
     render(){
         return (
@@ -21,18 +39,14 @@ class Ir extends React.Component {
                     <SubVisual subMenu={this.props.menu.name} />
 
                     <div id="wrap_contents">
-                        <SubLocation />
 
                         <Lnb lnbData={this.props.menu} />
 
                         <div id="contents">
-                            <ContentsTitle titleData={this.props.menu} />
 
-                            <Route exact path='/pr/saraminNews' component={SaraminNews} />
-                            <Route exact path='/pr/PressRelease' component={PressRelease} />
-                            <Route exact path='/pr/SaraminAwards' component={SaraminAwards} />
-                            <Route exact path='/pr/Webzine' component={Webzine} />
-                            <Route exact path='/pr/Ad' component={Ad} />
+                            {
+                                this.subMenu(this.props.menu.sub, 2)
+                            }
 
                         </div>
                     </div>

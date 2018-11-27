@@ -47,7 +47,7 @@ class App extends React.Component {
                     {
                         lo_kr.menu.map((menuData, idx) => {
                             return (
-                                <Route key={idx} path={'/'+ menuData.id +'/**'} 
+                                <Route key={idx} path={'/'+ menuData.id +'/**'}
                                         render={(...props) => React.createElement(components[ menuData.id ], {menu: menuData}, null)} />
                                 );
                         })

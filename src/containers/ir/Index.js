@@ -2,9 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import SubVisual from '../../components/SubVisual';
-import SubLocation from '../../components/SubLocation';
 import Lnb from '../Lnb';
-import ContentsTitle from '../../components/ContentsTitle';
 
 import ShareholderComposition from './ShareholderComposition';
 import Directorate from './Directorate';
@@ -17,6 +15,30 @@ import DisclosureManage from './DisclosureManage';
 
 class Ir extends React.Component {
 
+    components = {
+        "sub_ir_shareholderComposition" : ShareholderComposition,
+        "sub_ir_directorate" : Directorate,
+        "sub_ir_articlesAssociation" : ArticlesAssociation,
+        "ir_financialStatements" : FinancialStatements,
+        "ir_stockInformation" : StockInformation,
+        "ir_financialStatements2" : FinancialStatements2,
+        "ir_earningsRelease" : EarningsRelease,
+        "ir_disclosureManage" : DisclosureManage
+    };
+
+    subMenu = (data) => {
+        return data.map((subMenuData, idx) => {
+            if (subMenuData.sub == undefined){
+                return (
+                    <Route key={idx} path={subMenuData.uri}
+                           render={(...props) => React.createElement(this.components[ subMenuData.id ], {menu: subMenuData}, null)} />
+                )
+            } else {
+                return this.subMenu(subMenuData.sub)
+            }
+        })
+    };
+
     render(){
         return (
             <Router>
@@ -24,21 +46,14 @@ class Ir extends React.Component {
                     <SubVisual subMenu={this.props.menu.name} />
 
                     <div id="wrap_contents">
-                        <SubLocation />
 
                         <Lnb lnbData={this.props.menu} />
 
                         <div id="contents">
-                            <ContentsTitle titleData={this.props.menu} />
 
-                            <Route exact path='/ir/shareholderComposition' component={ShareholderComposition} />
-                            <Route exact path='/ir/Directorate' component={Directorate} />
-                            <Route exact path='/ir/ArticlesAssociation' component={ArticlesAssociation} />
-                            <Route exact path='/ir/FinancialStatements' component={FinancialStatements} />
-                            <Route exact path='/ir/StockInformation' component={StockInformation} />
-                            <Route exact path='/ir/FinancialStatements2' component={FinancialStatements2} />
-                            <Route exact path='/ir/EarningsRelease' component={EarningsRelease} />
-                            <Route exact path='/ir/DisclosureManage' component={DisclosureManage} />
+                            {
+                                this.subMenu(this.props.menu.sub, 2)
+                            }
 
                         </div>
                     </div>
